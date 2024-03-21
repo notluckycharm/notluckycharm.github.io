@@ -77,5 +77,21 @@ button a {
 }
 
 a {
-    text-decoration: underline; /* Underline for all a tags */
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.col {
+    flex: 0 0 45.0%;
+    max-width: 45.0%;
+}
+
+.page {
+    padding: 0px 100px;
 }
