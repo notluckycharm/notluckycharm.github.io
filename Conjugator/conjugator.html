@@ -69,9 +69,9 @@
             if (plurality == 0) { var plsuff = "" }
             else if (plurality == 1) {var plsuff = "ha" }
             var syllables = syllabify(string).reverse();
-            if (syllables.length == 1 && string.length == 2) {
-                    if (plurality == 0) { return "is" + string }
-                    else {return "has" + string}
+            if (syllables.length == 1 || (syllables.length == 2 && syllables[1].length == 1)) {
+                    if (plurality == 0) { return "is" + syllables[0] }
+                    else {return "has" + syllables[0]}
                 }
             else if (isAlabamaFrame(string)) {
                 if (consonants.includes(syllables[0].slice(0,1)) && consonants.includes(syllables[1].slice(-1))) { syllables[1] = syllables[1].slice(0,-1) + plsuff + 'ci' + syllables[1].slice(-1)}
@@ -91,8 +91,8 @@
             if (plurality == 0) { return string + "li" }
             else {
                 var syllables = syllabify(string).reverse();
-                if (syllables.length == 1 && string.length == 2) {
-                    return "il" + string;
+                if (syllables.length == 1 || (syllables.length == 2 && syllables[1].length == 1)) {
+                    return "il" + syllables[0]
                 }
                 else if (isAlabamaFrame(string)) {
                     if (consonants.includes(syllables[0].slice(0,1)) && consonants.includes(syllables[1].slice(-1))) { syllables[1] = syllables[1].slice(0,-1) + 'li' + syllables[1].slice(-1)}
