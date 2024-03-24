@@ -20,6 +20,21 @@ var consonants = ['b', 'c', 'd', 'f', 'h',
         sylls = sylls.concat(curr_syll);
         return sylls;
     }
+    function coallesce(string) {
+        for (var i = 0; i < string.length - 1; i++) {
+            if (vowels.includes(string[i]) && vowels.includes(string[i + 1] 
+                && string[i] != string[i + 1])) {
+                    string = string.slice(0,i) + string.slice(i + 1,string.length);
+                }
+            else if (i < string.length - 2) {
+                if (vowels.includes(string[i]) && vowels.includes(string[i + 1]) 
+                && vowels.includes(string[i + 2])) {
+                    string = string.slice(0,i) + string.slice(i + 1,string.length);
+                }
+            }
+        }
+        return string
+    }
     function isAlabamaFrame(string) {
         var syllables = syllabify(string);
         if (syllables.length < 2) { return false; }
@@ -33,11 +48,14 @@ var consonants = ['b', 'c', 'd', 'f', 'h',
             if (plurality == 0) { var plsuff = "" }
             else if (plurality == 1) {var plsuff = "ha" }
             var syllables = syllabify(string).reverse();
-            if (syllables.length == 1 && string.length == 2) {
-                    if (plurality == 0) { return "is" + string }
-                    else {return "has" + string}
+            if (syllables.length == 1 || (syllables.length == 2 && syllables[1].length == 1)) {
+                    if (plurality == 0) { return "is" + syllables[0] }
+                    else {return "has" + syllables[0]}
                 }
-            else if (isAlabamaFrame(string)) {
+            if (isAlabamaFrame(string)) {
+                if (syllables[0] == "li") {
+                    return string.slice(0,string.length - 2) + 'ci';
+                }
                 if (consonants.includes(syllables[0].slice(0,1)) && consonants.includes(syllables[1].slice(-1))) { syllables[1] = syllables[1].slice(0,-1) + plsuff + 'ci' + syllables[1].slice(-1)}
                 else {syllables[1] = syllables[1].concat(plsuff + 's')}
                 return(syllables.reverse().join(''))
@@ -46,7 +64,10 @@ var consonants = ['b', 'c', 'd', 'f', 'h',
                 if (syllables[0].length != 2) {
                     return string + plsuff + 'ci'
                 }
-                else {syllables[0] = syllables[0].slice(0,1) + plsuff + 'ci'; return syllables.reverse().join('')}
+                else {
+                    syllables[0] = syllables[0].slice(0,1) + plsuff + 'ci'; 
+                    return syllables.reverse().join('')
+                }
             }
         }
         if (person == 1) {
@@ -55,10 +76,13 @@ var consonants = ['b', 'c', 'd', 'f', 'h',
             if (plurality == 0) { return string + "li" }
             else {
                 var syllables = syllabify(string).reverse();
-                if (syllables.length == 1 && string.length == 2) {
-                    return "il" + string;
+                if (syllables.length == 1 || (syllables.length == 2 && syllables[1].length == 1)) {
+                    return "il" + syllables[0]
                 }
                 else if (isAlabamaFrame(string)) {
+                    if (syllables[0] == "li") {
+                        return string.slice(0,string.length - 2) + 'li';
+                    }
                     if (consonants.includes(syllables[0].slice(0,1)) && consonants.includes(syllables[1].slice(-1))) { syllables[1] = syllables[1].slice(0,-1) + 'li' + syllables[1].slice(-1)}
                     else {syllables[1] = syllables[1].concat('l')}
                     return(syllables.reverse().join(''))
@@ -72,24 +96,4 @@ var consonants = ['b', 'c', 'd', 'f', 'h',
             }
         }
         else {string}
-    }
-    function generateDeclensionTable(event) {
-      event.preventDefault();
-      var stem = document.getElementById("textInput").value;
-      console.log(conjugate(stem, 2, 1));
-      // Declensions array
-      var declensions = [
-        ['1', conjugate(stem, 1, 0), conjugate(stem, 1, 1)],
-        ['2', conjugate(stem, 2, 0), conjugate(stem, 2, 1)],
-        ['3', conjugate(stem, 3, 0) , conjugate(stem, 3, 1)],
-      ];
-      
-      // Create table
-      var table = "<table><tr><th></th><th>Singular</th><th>Plural</th></tr>";
-      for (var i = 0; i < declensions.length; i++) {
-        table += "<tr><td>" + declensions[i][0] + "</td><td>" + declensions[i][1] + "</td><td>" + declensions[i][2] + "</td></tr>";
-      }
-      table += "</table>";
-      
-      document.getElementById("displayText").innerHTML = table;
     }
