@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Fernandes - Projects</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="conjugator_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Alabama Noun Conjugator</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../projects.html">My Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="ui grid">
+            <div class="row">
+                <div class="left aligned column" style="padding: 0px">
+                    <div class="top-bar" style="margin-bottom:25px;">
+                        <span class="Alabama" style="margin-left:12px; margin-right:auto">Personal Pronouns</span>
+                    </div>
+                    <div class="flex-container" style="font-weight: 400;">
+                        <span id="context-akz1" style="font-size: 28px;">mooton</span>
+                        <span class="stem" id="displayStem">isna</span><span class="nominalsuffix" id="displaySuffix1"></span>
+                        <span id="context-akz2" style="font-size: 28px;"></span>
+                    </div>
+                    <div class="flex-container">
+                        <section id="Description" style="align-content: center;" onchange="generateForm(event)">
+                                <span id="context-eng1" style="font-size: 28px;">and</span>
+                                <span id="gramm-eng" style="font-size: 28px; color: rgb(139, 44, 245);"></span>
+                                <select class="custom-select" id="select">
+                                    <option value="ana" selected>I(Me)</option>
+                                    <option value="isna">You</option>
+                                    <option value="ibisna">He(Him)/She(Her)</option>
+                                    <option value="posna">We(Us)</option>
+                                    <option value="hasna">You all</option>
+                                    <option value="hoibisna">They(Them)</option>
+                                </select>
+                                <span id="context-eng2" style="font-size: 28px;"></span>
+                                <select class="custom-select" style="font-style:italic; color: rgb(139, 44, 245);" id="form">
+                                    <option value="" selected></option>
+                                    <option value="k">Nominative</option>
+                                    <option value="n">Oblique</option>
+                                    <option value="fan">Locative</option>
+                                    <!-- <option value="yá">Topic</option> -->
+                                </select>
+                                <!-- <input type="text" class="huge-input" id="textInput" placeholder="Enter verb here" required> -->
+                                <!-- <button type="submit">Submit</button> -->
+                        </section>
+                    </div>
+                    <div class="ui-divider"></div>
+                    <div class="flex-container" style="font-weight: 400;">
+                        <div id="displayText"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jacob Fernandes</p>
+    </footer>
+</body>
+<script src="conjugator.js"></script>
+<script>
+    function generateForm(event) {
+        event.preventDefault();
+        var stem = document.getElementById("select").value;
+        var form = document.getElementById("form").value;
+        switch (stem) {
+            case "ana":
+                var person = 1;
+                var plurality = 0;
+                break;
+            case "isna":
+                var person = 2;
+                var plurality = 0;
+                break;
+            case "ibisna":
+                var person = 3;
+                var plurality = 0;
+                break;
+            case "posna":
+                var person = 1;
+                var plurality = 1;
+                break;
+            case "hasna":
+                var person = 2;
+                var plurality = 1;
+                break;
+            case "hoibisna":
+                var person = 3;
+                var plurality = 1;
+                break;
+        }
+        switch (form) {
+            case "":
+                document.getElementById("context-eng1").innerHTML = "and";
+                document.getElementById("context-eng2").innerHTML = "";
+                document.getElementById("context-akz1").innerHTML = "moton";
+                document.getElementById("context-akz2").innerHTML = "";
+                document.getElementById("displayStem").innerHTML = stem;
+                document.getElementById("displaySuffix1").innerHTML = form;
+                document.getElementById("gramm-eng").innerHTML = "";
+                break;
+            case "k":
+                document.getElementById("context-eng1").innerHTML = "";
+                if (stem == "ibisna") {
+                    document.getElementById("context-eng2").innerHTML = "does it";
+                }
+                else { document.getElementById("context-eng2").innerHTML = "do it"; }
+                document.getElementById("context-akz1").innerHTML = "";
+                document.getElementById("context-akz2").innerHTML = conjugate('akkami', person, plurality);
+                document.getElementById("displayStem").innerHTML = stem.slice(0,stem.length - 1);
+                document.getElementById("displaySuffix1").innerHTML = "ok";
+                document.getElementById("gramm-eng").innerHTML = "";
+                break;
+            case "n":
+                document.getElementById("context-eng1").innerHTML = "... does";
+                document.getElementById("context-eng2").innerHTML = "";
+                document.getElementById("context-akz1").innerHTML = "...";
+                document.getElementById("context-akz2").innerHTML = dativeConjugate('akkami', person, plurality);
+                document.getElementById("displayStem").innerHTML = stem.slice(0,stem.length - 1);
+                document.getElementById("displaySuffix1").innerHTML = "on";
+                document.getElementById("gramm-eng").innerHTML = "for";
+                break;
+            case "fan":
+                document.getElementById("context-eng1").innerHTML = "...";
+                document.getElementById("context-eng2").innerHTML = "";
+                document.getElementById("context-akz1").innerHTML = "...";
+                document.getElementById("context-akz2").innerHTML = 'paanááhobi';
+                document.getElementById("displayStem").innerHTML = stem;
+                document.getElementById("displaySuffix1").innerHTML = "fan";
+                document.getElementById("gramm-eng").innerHTML = "on";
+                break;
+        }
+        
+    }
+  </script>
+</html>

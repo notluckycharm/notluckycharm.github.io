@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="conjugator_styles.css">
 </head>
-<body>
+<body onload="renderPronouns()">
     <header>
-        <h1>Alabama Verb Conjugator</h1>
-        <p>Type a verb in its third person singular form(ex: "He does"), and I will conjugate it for you!</p>
+        <h1>Alabama Noun Conjugator</h1>
     </header>
     <nav>
         <ul>
@@ -28,6 +27,11 @@
                             <button type="submit">Submit</button>
                         </form>
                     </section>
+                    <div class="pronounslist">
+                        <div class="row-el">
+                            
+                        </div>
+                    </div>
                     <div>
                         <div id="displayText"></div>
                     </div>
@@ -49,6 +53,15 @@
     </footer>
 </body>
 <script src="conjugator.js"></script>
+<script>
+    function renderPronouns() {
+        fetch('jsons/pronouns.json')
+            .then(response => response.json()) // Parses the response to JSON
+            .then(data => {
+                console.log(data.pronouns);
+        }).catch(error => console.error('Error fetching data:', error));
+    }
+</script>
 <script>
     function generateDeclensionTable(event) {
       event.preventDefault();

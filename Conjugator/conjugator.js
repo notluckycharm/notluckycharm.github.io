@@ -53,8 +53,8 @@ var consonants = ['b', 'c', 'd', 'f', 'h',
                     else {return "has" + syllables[0]}
                 }
             if (isAlabamaFrame(string)) {
-                if (syllables[0] == "li") {
-                    return string.slice(0,string.length - 2) + 'ci';
+                if (syllables[0] == "li" || syllables[0] == syllables[1][syllables[1].length - 1] + "i") {
+                    return string.slice(0,string.length - 2) + plsuff + 'ci';
                 }
                 if (consonants.includes(syllables[0].slice(0,1)) && consonants.includes(syllables[1].slice(-1))) { syllables[1] = syllables[1].slice(0,-1) + plsuff + 'ci' + syllables[1].slice(-1)}
                 else {syllables[1] = syllables[1].concat(plsuff + 's')}
@@ -80,8 +80,8 @@ var consonants = ['b', 'c', 'd', 'f', 'h',
                     return "il" + syllables[0]
                 }
                 else if (isAlabamaFrame(string)) {
-                    if (syllables[0] == "li") {
-                        return string.slice(0,string.length - 2) + 'li';
+                    if (syllables[0] == "li" || syllables[0] == syllables[1][syllables.length - 1] + 'i') {
+                        return string.slice(0,string.length - 2) + plsuff + 'li';
                     }
                     if (consonants.includes(syllables[0].slice(0,1)) && consonants.includes(syllables[1].slice(-1))) { syllables[1] = syllables[1].slice(0,-1) + 'li' + syllables[1].slice(-1)}
                     else {syllables[1] = syllables[1].concat('l')}
@@ -97,3 +97,22 @@ var consonants = ['b', 'c', 'd', 'f', 'h',
         }
         else {string}
     }
+
+function dativeConjugate(string, person, plurality) {
+    if (person == 1 && plurality == 0) {
+        return 'am' + string;
+    }
+    else if (person == 1 && plurality == 1) {
+        return 'pom' + string;
+    }
+    else if (person == 2 && plurality == 0) {
+        return 'cim' + string;
+    }
+    else if (person == 2 && plurality == 1) {
+        return 'hacim' + string;
+    }
+    else if (person == 3 && plurality == 0) {
+        return 'im' + string;
+    }
+    else {return 'aatim' + string;}
+}
