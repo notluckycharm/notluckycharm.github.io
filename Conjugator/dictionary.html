@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/styles.css">
+    </head>
+    <body>
+        <main>
+            <div style='font-family: Roboto, "Helvetica Neue", Arial, Helvetica, sans-serif;'>
+                <div class="ui">
+                    <div class="row" style="padding-top:25px">
+                        <div class="left aligned column" style="display: flex; border:0px; flex-direction: row;">
+                            <div class="two-col"><img src="static/Alabama-Coushata.png"></div>
+                            <div class="four-col" style="padding-left: 1rem; font-weight:500; font-size:28px; display: flex; align-items: center;">Alabama to English Dictionary Online</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui">
+                    <div class="row">
+                        <div class="left aligned column">
+                            <div class="center-container">
+                                <div class="huge" style="display: flex;">
+                                    <input id="searchBar" class="search-bar" type="text" placeholder="Search for an Alabama or English word" oninput="dictSort()">
+                                </div>
+                                <div style="margin-top: 3px;">
+                                    <div class="button-row">
+                                        <button id="lh" value="ɬ" onclick="addToSearch('ɬ');dictSort()" class="char">ɬ</button>
+                                        <button id="á" value="á" onclick="addToSearch('á');dictSort()" class="char">á</button>
+                                        <button id="à" value="à" onclick="addToSearch('à');dictSort()" class="char">à</button>
+                                        <button id="ó" onclick="addToSearch('ó');dictSort()" class="char">ó</button>
+                                        <button id="ò" onclick="addToSearch('ò');dictSort()" class="char">ò</button>
+                                        <button id="í" onclick="addToSearch('í');dictSort()" class="char">í</button>
+                                        <button id="ì" onclick="addToSearch('ì');dictSort()" class="char">ì</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="searchWords" class="left aligned center-container">
+
+                            </div>
+                            <!-- <div class="left aligned center-container">
+                                <div class="word">
+                                    <span>aati</span>
+                                </div>
+                                <div class="definition">
+                                    <span>American Indian, Native American; person, human being</span>
+                                </div>
+                            </div>
+                            <div class="ui-divider"></div>
+                            <div class="left aligned center-container">
+                                <div class="word">
+                                    <span>aatosi</span>
+                                </div>
+                                <div class="definition">
+                                    <span>American Indian baby or child</span>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            function addToSearch(char) {
+                document.getElementById('searchBar').value = document.getElementById('searchBar').value + char;
+            }
+            function dictSort() {
+                var divs = "";
+                var string = document.getElementById('searchBar').value.toLowerCase();
+                
+                function stateMachineSort(a, b) {
+                    if (a.lemma == string) { return -100000; }
+                    else {
+                        var shared = 0;
+                        for (var i = 0; i < string.length; i++){
+                            if (a.lemma.slice(0,string.length - i) == string.slice(0,string.length - i)) {
+                                shared = string.length - i;
+                            }
+                        }
+                        if (a.lemma < b.lemma) {
+                            return a.lemma.length - b.lemma.length - shared
+                        }
+                        else if (a.lemma > b.lemma && a.lemma.slice(0,string.length) != string) {
+                            return a.lemma.length - b.lemma.length - shared
+                        }
+                    }
+                }
+
+                fetch ("dict.json")
+                     .then((res) => {
+                        if (!res.ok) {
+                            throw new Error 
+                                (`HTTP error! Status: $(res.status)`);
+                        }
+                        return res.json();
+                     })
+                     .then((data) =>{
+                        var obj = data.words;
+                        obj = obj.filter((a) => a.lemma.includes(string));
+                        obj = obj.sort(stateMachineSort);
+                        for (var el in obj.slice(0,50)) {
+                            divs += `<div class="left aligned center-container">
+                                    <div class="word">
+                                        <span>` + obj[el].lemma + `</span>
+                                    </div>
+                                    <div class="definition">
+                                        <span>` + obj[el].definition + `</span>
+                                    </div>
+                                </div>
+                                <div class="ui-divider"></div>`
+                        }
+                        document.getElementById('searchWords').innerHTML = divs;
+                        return 0;
+                     })
+                     .catch((error) => console.error("Unable to fetch data:", error));
+                // var data = fetchJSONData();
+                // console.log(data);
+                
+            }
+        </script>
+    </body>
+</html>

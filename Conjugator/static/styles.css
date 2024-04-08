@@ -1,0 +1,117 @@
+.center-container {
+    margin: 10px;
+    text-align: center;
+    box-sizing: inherit;
+}
+
+select.custom-select {
+    background-color: white;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 5px; /* Rounded border */
+    font-size: 18px; /* Font size */
+    padding: 5px; /* Padding around the text */
+    font-weight: bold; /* Bold text */
+    text-align: center;
+  }
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    background-color: #f3f3f3;
+}
+
+.ui {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 0;
+    margin: -1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centers children horizontally within the row */
+    width: 100% !important;
+    padding-left: 1rem;
+}
+
+.left.aligned {
+    text-align: left;
+}
+
+.column {
+    max-width: 800px; /* Maxes out at 800px */
+    width: 100%; /* Takes the width of its parent up to 800px */
+    padding: 10px;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 5px; */
+}
+
+.two-col {
+    max-width: 25% !important;
+}
+.four-col {
+    max-width: 75% !important;
+}
+
+.huge {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+.search-bar {
+    max-width: 100%;
+    flex: 1 0 auto;
+    padding: .67857143em 1em;
+    background: #fff;
+    border: 1px solid rgba(34,36,38,.15);
+    color: rgba(0,0,0,.87);
+    border-radius: .28571429rem;
+    transition: box-shadow .1s ease,border-color .1s ease;
+    box-shadow: none;
+    padding: .67857143em 1em;
+    line-height: 1.25em;
+    font-size: 100%;
+}
+
+
+
+
+
+/* Buttons */
+button {
+    background: #fff;
+    border: 1px solid rgba(34,36,38,.15);
+    color: rgba(0,0,0,.87);
+    border-radius: .28571429rem;
+    transition: box-shadow .1s ease,border-color .1s ease;
+    box-shadow: none;
+}
+
+.button-row {
+    box-shadow: none;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: .28571429rem;
+    display: inline-flex;
+}
+button.char {
+    padding: 10px 14px;
+    border-radius: 0rem;
+}
+
+.ui-divider {
+    border-top: 1px solid rgba(34,36,38,.15);
+    border-bottom: 1px solid hsla(0,0%,100%,.1);
+}
+
+div.word {
+    font-size: 18px;
+    padding-bottom:5px;
+    font-weight: 450;
+}
+
+div.definition {
+    padding-top:5px;
+}
