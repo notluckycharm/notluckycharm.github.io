@@ -18,7 +18,7 @@
                 <div class="ui">
                     <div class="row" style="padding-top:25px">
                         <div class="left aligned column" style="display: flex; border:0px; flex-direction: row;">
-                            <div class="two-col"><img src="static/Alabama-Coushata.png"></div>
+                            <div style="width: auto"><img src="static/Alabama-Coushata.png"></div>
                             <div class="four-col" style="padding-left: 1rem; font-weight:500; font-size:28px; display: flex; align-items: center;">Alabama to English Dictionary Online</div>
                         </div>
                     </div>
@@ -29,6 +29,7 @@
                             <div class="center-container">
                                 <div class="huge" style="display: flex;">
                                     <input id="searchBar" class="search-bar" type="text" placeholder="Search for an Alabama or English word" oninput="dictSort()">
+                                    <i id="clear" class="icon" aria-hidden="true" onclick="clearInput(event)">&times;</i>
                                 </div>
                                 <div style="margin-top: 3px;">
                                     <div class="button-row">
@@ -43,31 +44,18 @@
                                 </div>
                             </div>
                             <div id="searchWords" class="left aligned center-container">
-
                             </div>
-                            <!-- <div class="left aligned center-container">
-                                <div class="word">
-                                    <span>aati</span>
-                                </div>
-                                <div class="definition">
-                                    <span>American Indian, Native American; person, human being</span>
-                                </div>
-                            </div>
-                            <div class="ui-divider"></div>
-                            <div class="left aligned center-container">
-                                <div class="word">
-                                    <span>aatosi</span>
-                                </div>
-                                <div class="definition">
-                                    <span>American Indian baby or child</span>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </main>
         <script>
+            function clearInput(event) {
+                event.preventDefault();
+                document.getElementById('searchBar').value = "";
+                document.getElementById('searchWords').innerHTML = "";
+            }
             function addToSearch(char) {
                 document.getElementById('searchBar').value = document.getElementById('searchBar').value + char;
             }
