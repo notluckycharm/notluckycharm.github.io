@@ -91,7 +91,7 @@
                      })
                      .then((data) =>{
                         var obj = data.words;
-                        obj = obj.filter((a) => a.lemma.includes(string));
+                        obj = obj.filter((a) => a.lemma.includes(string) || a.definition.includes(string));
                         obj = obj.sort(stateMachineSort);
                         for (var el in obj.slice(0,50)) {
                             divs += `<div class="left aligned center-container">
