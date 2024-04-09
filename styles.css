@@ -107,3 +107,20 @@ a {
     text-align: left;
     padding: 8px;
   }
+
+  .list {
+    display: flex;
+    max-width: 800px;
+    align-content: center;
+    justify-content: center;
+}
+
+.center-container {
+    width: 100%;
+    justify-content: center; 
+    display: flex;   
+}
+
+img {
+    width: 100%
+}
