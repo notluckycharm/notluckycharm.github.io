@@ -131,3 +131,7 @@ div.definition {
     font-weight: 400;
     text-decoration: inherit;
 }
+
+div.footer {
+    font-size: 14px;
+}

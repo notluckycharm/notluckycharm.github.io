@@ -45,6 +45,9 @@
                             </div>
                             <div id="searchWords" class="left aligned center-container">
                             </div>
+                            <!-- <div class="left aligned center-container footer">
+                                Entries sourced from the <span style="font-weight: 450">Dictionary of the Alabama Language</span> compiled by Cora Sylvestine, Heather K. Hardy, and Thomas Montler
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -59,33 +62,44 @@
             function addToSearch(char) {
                 document.getElementById('searchBar').value = document.getElementById('searchBar').value + char;
             }
-            function dictSort() {
-                var divs = "";
-                var string = document.getElementById('searchBar').value.toLowerCase();
-                
-                function stateMachineSort(a, b) {
-                    if (a.lemma.toLowerCase() == string || a.definition.toLowerCase() == string) { return -100000; }
-                    else if (b.lemma.toLowerCase() == string || b.definition.toLowerCase == string) { return 100000; }
-                    else {
-                        var lem_shared = 0;
-                        var def_shared = 0;
-                        for (var i = 0; i < string.length; i++){
-                            if (a.lemma.slice(0,string.length - i) == string.slice(0,string.length - i)) {
-                                lem_shared = string.length - i;
-                            }
-                            if (a.definition.slice(0,string.length - i) == string.slice(0,string.length - i)) {
-                                def_shared = string.length - i;
-                            }
-                        }
-                        if (a.lemma < b.lemma) {
-                            return a.lemma.length - b.lemma.length - lem_shared
-                        }
-                        else if (a.lemma > b.lemma && a.lemma.slice(0,string.length) != string) {
-                            return a.lemma.length - b.lemma.length - lem_shared
-                        }
+            function removeAccents(string) {
+                string = string.replaceAll('à', 'a')
+                               .replaceAll('á', 'a')
+                               .replaceAll('ó', 'o')
+                               .replaceAll('ò', 'o')
+                               .replaceAll('í', 'i')
+                               .replaceAll('ì', 'i');
+                return string;
+            }
+            function hasAccents(string) {
+                return string.includes('á') || string.includes('à') || string.includes('ó') || string.includes('ò') || string.includes('í') || string.includes('ì');
+            }
+            function initialShare(string, check) {
+                var lem_shared = 0;
+                var def_shared = 0;
+                for (var i = string.length; i > 0; i--){
+                    if (check.slice(0,string.length - i) == string.slice(0,string.length - i)) {
+                        lem_shared = string.length - i;
+                    }
+                    if (check.slice(0,string.length - i) == string.slice(0,string.length - i)) {
+                        def_shared = string.length - i;
                     }
                 }
-
+                return {'lem': lem_shared, 'def' : def_shared};
+            }
+            function dictSort() {
+                console.log(['aapo', 'aaposi', 'aapooba', 'aapoyatli', 'hissaapokyo', 'haapoka'].sort());
+                var divs = "";
+                var string = removeAccents(document.getElementById('searchBar').value.toLowerCase());
+                function stateMachineSort(a, b) {
+                    if (removeAccents(a.lemma.toLowerCase()) == string || a.definition.toLowerCase() == string) { return -100000; }
+                    else if (removeAccents(b.lemma.toLowerCase()) == string || b.definition.toLowerCase == string) { return 100000; }
+                    else {
+                        return removeAccents(a.lemma.toLowerCase()).localeCompare(removeAccents(b.lemma.toLowerCase()));
+                    }
+                }
+                console.log(stateMachineSort({'lemma': 'aapoyatli', 'definition': ''}, {'lemma': 'áapo', 'definition': ''}));
+                console.log(stateMachineSort({'lemma': 'áapo', 'definition': ''}, {'lemma': 'aapoyatli', 'definition': ''}));
                 fetch ("dict.json")
                      .then((res) => {
                         if (!res.ok) {
@@ -96,7 +110,8 @@
                      })
                      .then((data) =>{
                         var obj = data.words;
-                        obj = obj.filter((a) => a.lemma.toLowerCase().includes(string) || a.definition.toLowerCase().includes(string));
+                        obj = obj.filter((a) => 
+                            removeAccents(a.lemma.toLowerCase()).includes(string) || a.definition.toLowerCase().includes(string));
                         obj = obj.sort(stateMachineSort);
                         for (var el in obj.slice(0,50)) {
                             divs += `<div class="left aligned center-container">
