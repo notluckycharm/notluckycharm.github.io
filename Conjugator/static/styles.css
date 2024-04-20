@@ -95,6 +95,7 @@ button {
 button.char {
     padding: 10px 14px;
     border-radius: 0rem;
+    cursor:pointer;
 }
 
 .ui-divider {
