@@ -45,9 +45,15 @@
                             </div>
                             <div id="searchWords" class="left aligned center-container">
                             </div>
-                            <!-- <div class="left aligned center-container footer">
-                                Entries sourced from the <span style="font-weight: 450">Dictionary of the Alabama Language</span> compiled by Cora Sylvestine, Heather K. Hardy, and Thomas Montler
-                            </div> -->
+                            <div class="ui-divider"></div>
+                            <div class="left aligned center-container footer">
+                                <p>
+                                    Entries sourced from the <span style="font-weight: 450">Dictionary of the Alabama Language</span> compiled by Cora Sylvestine, Heather K. Hardy, and Thomas Montler
+                                </p>
+                                <p>
+                                    Website designed and compiled by Jacob Fernandes, 2024
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,7 +83,7 @@
             function initialShare(string, check) {
                 var lem_shared = 0;
                 var def_shared = 0;
-                for (var i = string.length; i > 0; i--){
+                for (var i = string.length; i >= 0; i--){
                     if (check.slice(0,string.length - i) == string.slice(0,string.length - i)) {
                         lem_shared = string.length - i;
                     }
@@ -88,18 +94,21 @@
                 return {'lem': lem_shared, 'def' : def_shared};
             }
             function dictSort() {
-                console.log(['aapo', 'aaposi', 'aapooba', 'aapoyatli', 'hissaapokyo', 'haapoka'].sort());
                 var divs = "";
                 var string = removeAccents(document.getElementById('searchBar').value.toLowerCase());
                 function stateMachineSort(a, b) {
-                    if (removeAccents(a.lemma.toLowerCase()) == string || a.definition.toLowerCase() == string) { return -100000; }
-                    else if (removeAccents(b.lemma.toLowerCase()) == string || b.definition.toLowerCase == string) { return 100000; }
+                    var aShare = initialShare(string, removeAccents(a.lemma.toLowerCase()))['lem'];
+                    var bShare = initialShare(string, removeAccents(b.lemma.toLowerCase()))['lem'];
+                    if (aShare > bShare) { return -1; }
+                    else if (bShare > aShare) { return 1; }
                     else {
-                        return removeAccents(a.lemma.toLowerCase()).localeCompare(removeAccents(b.lemma.toLowerCase()));
+                        if (removeAccents(a.lemma.toLowerCase()) == string || a.definition.toLowerCase() == string) { return -100000; }
+                        else if (removeAccents(b.lemma.toLowerCase()) == string || b.definition.toLowerCase == string) { return 100000; }
+                        else {
+                            return (removeAccents(a.lemma.toLowerCase()).localeCompare(removeAccents(b.lemma.toLowerCase())) - aShare + bShare);
+                        }
                     }
                 }
-                console.log(stateMachineSort({'lemma': 'aapoyatli', 'definition': ''}, {'lemma': 'áapo', 'definition': ''}));
-                console.log(stateMachineSort({'lemma': 'áapo', 'definition': ''}, {'lemma': 'aapoyatli', 'definition': ''}));
                 fetch ("dict.json")
                      .then((res) => {
                         if (!res.ok) {
@@ -121,8 +130,11 @@
                                     <div class="definition">
                                         <span>` + obj[el].definition + `</span>
                                     </div>
-                                </div>
-                                <div class="ui-divider"></div>`
+                                </div>`
+                            if ((el < obj.length - 1 && obj.length < 50) || (el < 49 && obj.length >= 50)) {
+                                divs += `<div class="ui-divider"></div>`
+                            }
+                            
                         }
                         document.getElementById('searchWords').innerHTML = divs;
                         return 0;
