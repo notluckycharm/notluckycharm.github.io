@@ -281,8 +281,8 @@
     },
     { 
         "lemma":"kànko",
-        "definition": "to be bad, evil, no good, rotten, worthless; to sin",
-        "class": "Other Verb"
+        "definition": "Negative form of kano",
+        "class": "nan"
     },
     { 
         "lemma":"kànkotilka",
@@ -1051,7 +1051,7 @@
     },
     { 
         "lemma":"kootíkko",
-        "definition": "to not whistle",
+        "definition": "Negative form of kootka1",
         "class": "-LI"
     },
     { 
@@ -2716,7 +2716,7 @@
     },
     { 
         "lemma":"hasnókko",
-        "definition": "hasna",
+        "definition": "Negative form of hasna",
         "class": "nan"
     },
     { 
@@ -7211,8 +7211,8 @@
     },
     { 
         "lemma":"mottaíkko",
-        "definition": "to be opaque, illegible, imperceptable, unclear, invisible",
-        "class": "Other Verb"
+        "definition": "Negative form of mottaki",
+        "class": "nan"
     },
     { 
         "lemma":"mottaki",
@@ -10156,7 +10156,7 @@
     },
     { 
         "lemma":"óstàa-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -10981,7 +10981,7 @@
     },
     { 
         "lemma":"naaɬiihíkko",
-        "definition": "to not talk",
+        "definition": "Negative form of naaɬiika",
         "class": "-LI"
     },
     { 
@@ -11936,7 +11936,7 @@
     },
     { 
         "lemma":"niɬálli-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -12806,7 +12806,7 @@
     },
     { 
         "lemma":"chafaa-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -13196,7 +13196,7 @@
     },
     { 
         "lemma":"champóolostíkko",
-        "definition": "champoli",
+        "definition": "Negative form of champoli",
         "class": "nan"
     },
     { 
@@ -13241,7 +13241,7 @@
     },
     { 
         "lemma":"chasàa-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -13826,7 +13826,7 @@
     },
     { 
         "lemma":"chii-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -13926,7 +13926,7 @@
     },
     { 
         "lemma":"chikìi-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -15106,7 +15106,7 @@
     },
     { 
         "lemma":"choopatíkko",
-        "definition": "to not be able to buy",
+        "definition": "Negative form of choopa",
         "class": "-LI"
     },
     { 
@@ -17621,7 +17621,7 @@
     },
     { 
         "lemma":"topat-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -18066,7 +18066,7 @@
     },
     { 
         "lemma":"ischoolpókko",
-        "definition": "«",
+        "definition": "Negative form of ischoolpa",
         "class": "nan"
     },
     { 
@@ -20651,7 +20651,7 @@
     },
     { 
         "lemma":"istinkànko",
-        "definition": "to not look good on",
+        "definition": "Negative form of istinkano",
         "class": "3/AM-"
     },
     { 
@@ -22011,7 +22011,7 @@
     },
     { 
         "lemma":"ittafilim-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -22216,7 +22216,7 @@
     },
     { 
         "lemma":"ittanah-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -23646,7 +23646,7 @@
     },
     { 
         "lemma":"iyyàaɬókko",
-        "definition": "«",
+        "definition": "Negative form of iyyàaɬi",
         "class": "nan"
     },
     { 
@@ -24061,7 +24061,7 @@
     },
     { 
         "lemma":"-ɬakoffi",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -24256,7 +24256,7 @@
     },
     { 
         "lemma":"ɬatof-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -24526,7 +24526,7 @@
     },
     { 
         "lemma":"ɬipìi-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -24721,7 +24721,7 @@
     },
     { 
         "lemma":"ɬopot-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -24756,7 +24756,7 @@
     },
     { 
         "lemma":"ɬoy-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -25016,7 +25016,7 @@
     },
     { 
         "lemma":"balàa-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -25216,7 +25216,7 @@
     },
     { 
         "lemma":"bas-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -25546,7 +25546,7 @@
     },
     { 
         "lemma":"biif-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -25646,7 +25646,7 @@
     },
     { 
         "lemma":"biɬìi-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -26331,7 +26331,7 @@
     },
     { 
         "lemma":"waayoh-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -26461,7 +26461,7 @@
     },
     { 
         "lemma":"wakay-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -26751,7 +26751,7 @@
     },
     { 
         "lemma":"wasat-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -27486,7 +27486,7 @@
     },
     { 
         "lemma":"aamat-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -27561,7 +27561,7 @@
     },
     { 
         "lemma":"aasih-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -29021,7 +29021,7 @@
     },
     { 
         "lemma":"achanàa-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -29266,7 +29266,7 @@
     },
     { 
         "lemma":"achosòo-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -30211,7 +30211,7 @@
     },
     { 
         "lemma":"akostinitíkko",
-        "definition": "to not know something",
+        "definition": "Negative form of kostini",
         "class": "-LI"
     },
     { 
@@ -30431,7 +30431,7 @@
     },
     { 
         "lemma":"alfabókko",
-        "definition": "«",
+        "definition": "Negative form of alfabi",
         "class": "nan"
     },
     { 
@@ -30611,7 +30611,7 @@
     },
     { 
         "lemma":"alot-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -31041,7 +31041,7 @@
     },
     { 
         "lemma":"anókko",
-        "definition": "«",
+        "definition": "Negative form of anoolo",
         "class": "nan"
     },
     { 
@@ -31136,7 +31136,7 @@
     },
     { 
         "lemma":"apakfot-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -31571,7 +31571,7 @@
     },
     { 
         "lemma":"askah-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -31731,7 +31731,7 @@
     },
     { 
         "lemma":"atakàa-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -31831,7 +31831,7 @@
     },
     { 
         "lemma":"atanat-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -33751,7 +33751,7 @@
     },
     { 
         "lemma":"samat-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -34066,7 +34066,7 @@
     },
     { 
         "lemma":"siip-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -34926,7 +34926,7 @@
     },
     { 
         "lemma":"falam-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -35191,7 +35191,7 @@
     },
     { 
         "lemma":"filam-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -36281,7 +36281,7 @@
     },
     { 
         "lemma":"pakof-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -36491,7 +36491,7 @@
     },
     { 
         "lemma":"panay-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -37276,7 +37276,7 @@
     },
     { 
         "lemma":"pokyoh-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -37871,7 +37871,7 @@
     },
     { 
         "lemma":"ibaapisiilókko",
-        "definition": "«",
+        "definition": "Negative form of ibaapisiili",
         "class": "nan"
     },
     { 
@@ -37891,7 +37891,7 @@
     },
     { 
         "lemma":"ibachasàa-",
-        "definition": "nan",
+        "definition": "<br/>",
         "class": "nan"
     },
     { 
@@ -38206,7 +38206,7 @@
     },
     { 
         "lemma":"ibisnókko",
-        "definition": "ibisno",
+        "definition": "Negative form of ibisno",
         "class": "nan"
     },
     { 
@@ -40546,7 +40546,7 @@
     },
     { 
         "lemma":"illíilastíkko",
-        "definition": "illihla",
+        "definition": "Negative form of illihla",
         "class": "nan"
     },
     { 

@@ -129,9 +129,18 @@
                                         <span>` + obj[el].lemma + `</span>
                                     </div>
                                     <div class="definition">
-                                        <span>` + obj[el].definition + `</span>
+                                        <span>` + obj[el].definition
+                                            
+                            if (obj[el].class != "nan") {
+                                divs += "&nbsp;" + "[" + obj[el].class + "]" + `</span>
                                     </div>
                                 </div>`
+                            }
+                            else {
+                                divs += `</span>
+                                    </div>
+                                </div>`
+                            }
                             if ((el < obj.length - 1 && obj.length < 50) || (el < 49 && obj.length >= 50)) {
                                 divs += `<div class="ui-divider"></div>`
                             }
