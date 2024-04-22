@@ -136,3 +136,8 @@ div.definition {
 div.footer {
     font-size: 14px;
 }
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
