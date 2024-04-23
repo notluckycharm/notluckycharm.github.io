@@ -672,7 +672,7 @@
     { 
         "lemma":"kilaaya",
         "definition": "torch, light",
-        "class": "Other Verb"
+        "class": "nan"
     },
     { 
         "lemma":"kilayli",
@@ -11792,12 +11792,12 @@
     { 
         "lemma":"níhtama",
         "definition": "tomorrow",
-        "class": "Other Verb"
+        "class": "nan"
     },
     { 
         "lemma":"nìhtaniɬálli",
         "definition": "tomorrow morning",
-        "class": "Other Verb"
+        "class": "nan"
     },
     { 
         "lemma":"nihta onóstàaka",
@@ -11807,12 +11807,12 @@
     { 
         "lemma":"nìhtapontókkòoli",
         "definition": "tomorrow at noon",
-        "class": "Other Verb"
+        "class": "nan"
     },
     { 
         "lemma":"nìhtapontókkòot ɬopotli",
         "definition": "tomorrow after noon, tomorrow after dinner",
-        "class": "Other Verb"
+        "class": "nan"
     },
     { 
         "lemma":"nìhtapontókkòot taɬoffi",
@@ -16387,7 +16387,7 @@
     { 
         "lemma":"tankaama",
         "definition": "tonight",
-        "class": "Other Verb"
+        "class": "nan"
     },
     { 
         "lemma":"tánkàasi",
@@ -18392,7 +18392,7 @@
     { 
         "lemma":"iskanokchakko choba",
         "definition": "tomato cutworm, caterpillar",
-        "class": "Other Verb"
+        "class": "nan"
     },
     { 
         "lemma":"iskanpatha",
@@ -23812,7 +23812,7 @@
     { 
         "lemma":"iyyochoski",
         "definition": "toes",
-        "class": "Other Verb"
+        "class": "nan"
     },
     { 
         "lemma":"iyyokíwwo",
@@ -25792,7 +25792,7 @@
     { 
         "lemma":"bitlosi",
         "definition": "toy top",
-        "class": "Other Verb"
+        "class": "nan"
     },
     { 
         "lemma":"biya",
