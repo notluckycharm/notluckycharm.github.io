@@ -32654,736 +32654,316 @@
         "definition": "month of April",
         "class": "nan"
     },
-    { 
-        "lemma":"-a",
-        "definition": "(Nom/Mid)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"a-",
-        "definition": "(Appl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-aa",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"aa-",
-        "definition": "(GenLoc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-aaba",
-        "definition": "(Modl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-áahosi",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-áali",
-        "definition": "(Modf)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-àapi",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"aati-",
-        "definition": "(PlObj)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ahi",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-álpìisa",
-        "definition": "(Modl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-áɬɬi",
-        "definition": "(Modf)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<as>",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-aski",
-        "definition": "(Coll)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ba",
-        "definition": "(Imp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-báana",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-bíika",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-bíino",
-        "definition": "(Cntrst)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"cha-",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"chi-",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<chi>",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-chi1",
-        "definition": "(Cs)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-chi2",
-        "definition": "(Repet)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-chi3",
-        "definition": "3",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-fa",
-        "definition": "(NLoc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-fíhna",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-fòoka",
-        "definition": "(Temp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ha1",
-        "definition": "(NPl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ha2",
-        "definition": "(Imp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ha3",
-        "definition": "3",
-        "class": "nan"
-    },
-    { 
-        "lemma":"hachi-",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<hachi>",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-hachi",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"has-",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<has>",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-hchi",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"hi-",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"hii-",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-hili",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ho-",
-        "definition": "(Dist)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-holi",
-        "definition": "(PlImp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ibaa-",
-        "definition": "(Comit)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ibii-",
-        "definition": "(Loc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ichoo-",
-        "definition": "(Loc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ik-",
-        "definition": "(Neg)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<ik>",
-        "definition": "(Neg)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"il1-",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"il2-",
-        "definition": "(Nom/Mid)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<il1>",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<il2>",
-        "definition": "(Nom/Mid)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ili-",
-        "definition": "(Refl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ilt-",
-        "definition": "(Dir)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"im-",
-        "definition": "(Dat)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"is-",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<is>",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ist-",
-        "definition": "(Peri)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ita-",
-        "definition": "(Loc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"itta-",
-        "definition": "(Loc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"itti-",
-        "definition": "(Recp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-k",
-        "definition": "(Disc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ka1",
-        "definition": "(Nom/Mid)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ka2",
-        "definition": "(Deic)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ka3",
-        "definition": "3",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-káhmi",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-kha",
-        "definition": "(RemPst)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ki",
-        "definition": "(Neg)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<ki>",
-        "definition": "(Neg)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-kítta",
-        "definition": "(Modf)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ko",
-        "definition": "(QCnf)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<l1>",
-        "definition": "(Nom/Mid)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<l2>",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-la",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-laha",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-lahi",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-laho",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-li1",
-        "definition": "(VExt)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-li2",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<li1>",
-        "definition": "(Nom/Mid)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<li2>",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-lo",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-loho",
-        "definition": "(Imp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-loolo",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ma",
-        "definition": "(Sbjnct)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-máaɬi-",
-        "definition": "(Modl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-máami",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"maast-",
-        "definition": "(Dir)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"maat-",
-        "definition": "(Dir)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-mahilo",
-        "definition": "(Modl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-máɬɬi",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-mo",
-        "definition": "(Modl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-mooli",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-móska",
-        "definition": "(Purp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-mpa",
-        "definition": "(Evid)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-n",
-        "definition": "(Disc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-nàa",
-        "definition": "(Modl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ni",
-        "definition": "(Modl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-nnàha",
-        "definition": "(NegImp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"nok-",
-        "definition": "(Loc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"noo-",
-        "definition": "(Loc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-o1",
-        "definition": "(Det)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-o2",
-        "definition": "(Neg)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-o3",
-        "definition": "3",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-o4",
-        "definition": "4",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-oka",
-        "definition": "(PlImp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ókko",
-        "definition": "(NegCop)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-oko",
-        "definition": "(Imp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ona",
-        "definition": "(Cust)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ona-",
-        "definition": "(Loc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"oo-",
-        "definition": "(Loc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-òo-",
-        "definition": "(Repet)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ooli",
-        "definition": "(Evid)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-óot",
-        "definition": "(Det)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-osi",
-        "definition": "(Dim/Aug)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-oska",
-        "definition": "(Consq)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-óska",
-        "definition": "(Modl)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"ost-",
-        "definition": "(Dir)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"paa-",
-        "definition": "(Loc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-palammi",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"po-",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-s",
-        "definition": "(Conn)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<s1>",
-        "definition": "(PlSj)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"<s2>",
-        "definition": "(Pron)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-sa",
-        "definition": "(Evid)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ska",
-        "definition": "(Reas)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-sta",
-        "definition": "(Reas)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-stoba",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-t",
-        "definition": "(Disc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ta",
-        "definition": "(Cntg)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-taaka",
-        "definition": "(Evid)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-taka",
-        "definition": "(Hort)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-táska",
-        "definition": "(Reas)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ti",
-        "definition": "(Asp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-tika1",
-        "definition": "(Hort)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-tika2",
-        "definition": "(Cntrst)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-tíkko",
-        "definition": "(Neg)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-tíkkó",
-        "definition": "(Contra)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-to",
-        "definition": "(Pst)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-toha",
-        "definition": "(NarPst)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-toho",
-        "definition": "(PstSq)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-toka",
-        "definition": "(PlImp)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-toska",
-        "definition": "(Consq)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-y-",
-        "definition": "(Disc)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-ya",
-        "definition": "(Deic)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-yáali",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-yáami",
-        "definition": "(Modf)",
-        "class": "nan"
-    },
-    { 
-        "lemma":"-yáɬɬi",
-        "definition": "(Adv)",
-        "class": "nan"
-    },
+    {"lemma": "-a",
+  "definition": "(Nom/Mid) (nonproductive) object nominalizing suffix or middle",
+  "class": ""},
+ {"lemma": "a-",
+  "definition": "(Appl) (nonproductive) verb stem derivational prefix typically adding an object",
+  "class": ""},
+ {"lemma": "-aa", "definition": "(Pron) I", "class": ""},
+ {"lemma": "aa-", "definition": "(GenLoc) at, to", "class": ""},
+ {"lemma": "-aaba",
+  "definition": "(Modl) verb suffix indicating an opinion or belief or that the speaker is asking for confirmation of a belief, as in tag questions",
+  "class": ""},
+ {"lemma": "-áahosi", "definition": "(Adv) almost", "class": ""},
+ {"lemma": "-áali",
+  "definition": "(Modf) the one, the very, the same, the exact; one's very own, one's own self",
+  "class": ""},
+ {"lemma": "-àapi", "definition": "(Adv) really, very; but", "class": ""},
+ {"lemma": "aati-",
+  "definition": "(PlObj) verb prefix typically indicating a plural third person object, often unspecified, or occasionally a third person unspecified subject",
+  "class": ""},
+ {"lemma": "-ahi",
+  "definition": "(Asp) verb suffix indicating probable or intended unrealized events",
+  "class": ""},
+ {"lemma": "-álpìisa",
+  "definition": "(Modl) can, could, should, supposed to",
+  "class": ""},
+ {"lemma": "-áɬɬi",
+  "definition": "(Modf) the exact, the exclusive, just, the mere, only, each, the particular",
+  "class": ""},
+ {"lemma": "<as>", "definition": "(Pron) you", "class": ""},
+ {"lemma": "-aski",
+  "definition": "(Coll) verb stem suffix specifying collective plural",
+  "class": ""},
+ {"lemma": "-ba",
+  "definition": "(Imp) verb suffix indicating polite (?) request",
+  "class": ""},
+ {"lemma": "-báana", "definition": "(Asp) already", "class": ""},
+ {"lemma": "-bíika",
+  "definition": "(Asp) verb suffix indicating repetitive action",
+  "class": ""},
+ {"lemma": "-bíino",
+  "definition": "(Cntrst) even though, despite",
+  "class": ""},
+ {"lemma": "cha-", "definition": "(Pron) I, me", "class": ""},
+ {"lemma": "chi-", "definition": "(Pron) you", "class": ""},
+ {"lemma": "<chi>", "definition": "(Pron) you", "class": ""},
+ {"lemma": "-chi1", "definition": "(Cs)", "class": ""},
+ {"lemma": "-chi2", "definition": "(Repet)", "class": ""},
+ {"lemma": "-chi3", "definition": "3", "class": ""},
+ {"lemma": "-fa",
+  "definition": "(NLoc) at, to; (the place) where",
+  "class": ""},
+ {"lemma": "-fíhna",
+  "definition": "(Adv) exactly, right, very, really; too",
+  "class": ""},
+ {"lemma": "-fòoka", "definition": "(Temp) when, while", "class": ""},
+ {"lemma": "-ha1", "definition": "(NPl)", "class": ""},
+ {"lemma": "-ha2", "definition": "(Imp)", "class": ""},
+ {"lemma": "-ha3", "definition": "3", "class": ""},
+ {"lemma": "hachi-", "definition": "(Pron) you, y'all", "class": ""},
+ {"lemma": "<hachi>", "definition": "(Pron) you, y'all", "class": ""},
+ {"lemma": "-hachi", "definition": "(Pron) you, y'all", "class": ""},
+ {"lemma": "has-", "definition": "(Pron) you, y'all", "class": ""},
+ {"lemma": "<has>", "definition": "(Pron) you, y'all", "class": ""},
+ {"lemma": "-hchi",
+  "definition": "(Asp) verb suffix indicating unbounded action or state, either progressive, habitual, general/universal, or noninstantiated (i.e. gerundives)",
+  "class": ""},
+ {"lemma": "hi-",
+  "definition": "(Adv) (nonproductive) verb prefix which forms temporal expressions, indicating the number of times event occurs",
+  "class": ""},
+ {"lemma": "hii-", "definition": "(Pron) me", "class": ""},
+ {"lemma": "-hili", "definition": "(Pron) we", "class": ""},
+ {"lemma": "ho-",
+  "definition": "(Dist) verb prefix for third person distributive plural subject or third person indefinite subject",
+  "class": ""},
+ {"lemma": "-holi",
+  "definition": "(PlImp) suffix on verbs with the shape...CVV-li, CVC-li,...VCV]",
+  "class": ""},
+ {"lemma": "ibaa-",
+  "definition": "(Comit) verb suffix indicating the addition of an object which accompanies subject in performance of event",
+  "class": ""},
+ {"lemma": "ibii-",
+  "definition": "(Loc) verb prefix indicating location of event on the face or otherwise action pertaining to the face",
+  "class": ""},
+ {"lemma": "ichoo-",
+  "definition": "(Loc) verb prefix indicating location of event on or in the mouth or otherwise action pertaining to the mouth, or by metaphorical extension the rim of an opening",
+  "class": ""},
+ {"lemma": "ik-",
+  "definition": "(Neg) verb prefix forming negative stems from roots of the shape CV",
+  "class": ""},
+ {"lemma": "<ik>",
+  "definition": "(Neg) verb infix forming negative stems from roots of the shape...VV-kV or...VC-kV",
+  "class": ""},
+ {"lemma": "il1-", "definition": "(Pron)", "class": ""},
+ {"lemma": "il2-", "definition": "(Nom/Mid)", "class": ""},
+ {"lemma": "<il1>", "definition": "(Pron)", "class": ""},
+ {"lemma": "<il2>", "definition": "(Nom/Mid)", "class": ""},
+ {"lemma": "ili-", "definition": "(Refl) oneself", "class": ""},
+ {"lemma": "ilt-", "definition": "(Dir) come and", "class": ""},
+ {"lemma": "im-",
+  "definition": "(Dat) applicative verb prefix indicating a nonaffected object such as recipients, goals, benefactive/malefactive, possessors of affected objects",
+  "class": ""},
+ {"lemma": "is-", "definition": "(Pron) you", "class": ""},
+ {"lemma": "<is>", "definition": "(Pron) you", "class": ""},
+ {"lemma": "ist-",
+  "definition": "(Peri) applicative verb prefix, to add or imply a peripheral object (including propositions) of the verb, such as an implement, or a container in which the direct object is located; derives nouns for tools and implements; irregularly derives causative stems for a few (lexically marked) verbs",
+  "class": ""},
+ {"lemma": "ita-",
+  "definition": "(Loc) verb derivational prefix indicating action performed on the ground or by a fire",
+  "class": ""},
+ {"lemma": "itta-",
+  "definition": "(Loc) verb prefix indicating action occurring between two objects",
+  "class": ""},
+ {"lemma": "itti-", "definition": "(Recp) each other", "class": ""},
+ {"lemma": "-k",
+  "definition": "(Disc) suffix occurring on nouns indicating a more central relationship to the proposition and on nonmain clause verbs indicating various discourse functions including identity of referent in a switch reference system",
+  "class": ""},
+ {"lemma": "-ka1", "definition": "(Nom/Mid)", "class": ""},
+ {"lemma": "-ka2", "definition": "(Deic)", "class": ""},
+ {"lemma": "-ka3", "definition": "3", "class": ""},
+ {"lemma": "-káhmi",
+  "definition": "(Adv) sort of, kind of, like that, as if, just about, mainly",
+  "class": ""},
+ {"lemma": "-kha",
+  "definition": "(RemPst) main clause verb suffix indicating remote past tense of personal experience",
+  "class": ""},
+ {"lemma": "-ki",
+  "definition": "(Neg) verb suffix forming negative stems from roots of the shape...C],...VV], or...VCV]",
+  "class": ""},
+ {"lemma": "<ki>",
+  "definition": "(Neg) verb infix forming negative stems from stems of the shape...VCCV] or...VVCV]",
+  "class": ""},
+ {"lemma": "-kítta", "definition": "(Modf) the late, the former", "class": ""},
+ {"lemma": "-ko",
+  "definition": "(QCnf) verb suffix used to ask for confirmation of an immediately preceding statement; the identity of a previously mentioned noun may be confirmed by suffixing -o1 first",
+  "class": ""},
+ {"lemma": "<l1>", "definition": "(Nom/Mid)", "class": ""},
+ {"lemma": "<l2>", "definition": "(Pron)", "class": ""},
+ {"lemma": "-la",
+  "definition": "(Asp) verb suffix indicating an irrealis event",
+  "class": ""},
+ {"lemma": "-laha",
+  "definition": "(Asp) word final verb suffix indicating an irrealis event",
+  "class": ""},
+ {"lemma": "-lahi",
+  "definition": "(Asp) medial or final verb suffix indicating an irrealis event",
+  "class": ""},
+ {"lemma": "-laho",
+  "definition": "(Asp) medial or final verb suffix indicating an irrealis event",
+  "class": ""},
+ {"lemma": "-li1", "definition": "(VExt)", "class": ""},
+ {"lemma": "-li2", "definition": "(Pron)", "class": ""},
+ {"lemma": "<li1>", "definition": "(Nom/Mid)", "class": ""},
+ {"lemma": "<li2>", "definition": "(Pron)", "class": ""},
+ {"lemma": "-lo",
+  "definition": "(Asp) verb suffix indicating probable future event, found frequently in quotations",
+  "class": ""},
+ {"lemma": "-loho",
+  "definition": "(Imp) verb suffix indicating a command",
+  "class": ""},
+ {"lemma": "-loolo",
+  "definition": "(Asp) verb suffix indicating strong assertion regarding a future event",
+  "class": ""},
+ {"lemma": "-ma", "definition": "(Sbjnct) would, if, whenever", "class": ""},
+ {"lemma": "-máaɬi-",
+  "definition": "(Modl) must, would; just, only, merely",
+  "class": ""},
+ {"lemma": "-máami",
+  "definition": "(Adv) (very rare) verb suffix",
+  "class": ""},
+ {"lemma": "maast-",
+  "definition": "(Dir) verb prefix combining the semantics of maat- and ist-, indicating an action performed at a distance involving or implying a peripheral or oblique object, such as a container that the affected object is in",
+  "class": ""},
+ {"lemma": "maat-",
+  "definition": "(Dir) verb derivational prefix indicating object is at a distance from the subject or subject of an action is at a distance from the speaker",
+  "class": ""},
+ {"lemma": "-mahilo",
+  "definition": "(Modl) verb suffix indicating speaker's strong belief in the likely result of a hypothetical action, also used in tag questions requesting confirmation of a belief",
+  "class": ""},
+ {"lemma": "-máɬɬi",
+  "definition": "(Adv) ever, always, whenever; never, only (?); to be ready to",
+  "class": ""},
+ {"lemma": "-mo", "definition": "(Modl) yet, whenever", "class": ""},
+ {"lemma": "-mooli", "definition": "(Adv) very, really", "class": ""},
+ {"lemma": "-móska", "definition": "(Purp) so, in order to", "class": ""},
+ {"lemma": "-mpa",
+  "definition": "(Evid) reportative verb suffix indicating that the assertion is based on what someone has said; can occur on main clauses",
+  "class": ""},
+ {"lemma": "-n",
+  "definition": "(Disc) suffix occurring on nouns indicating a peripheral relationship to the proposition and on verbs indicating various discourse functions including switch of referent in a switch reference system",
+  "class": ""},
+ {"lemma": "-nàa",
+  "definition": "(Modl) verb suffix that marks a question that is in response to a previous remark by the addressee regarding a future action about which the speaker has certain expectations or which politely corrects an assertion about a past event",
+  "class": ""},
+ {"lemma": "-ni",
+  "definition": "(Modl) should, ought to, supposed to; supposedly, supposed to have",
+  "class": ""},
+ {"lemma": "-nnàha",
+  "definition": "(NegImp) verb suffix; unlike with other imperatives the verb is inflected for person, but is not marked otherwise as a negative stem",
+  "class": ""},
+ {"lemma": "nok-",
+  "definition": "(Loc) verb prefix indicating location of event on or in the throat or otherwise action pertaining to the throat, or by metaphorical extension, the emotions",
+  "class": ""},
+ {"lemma": "noo-",
+  "definition": "(Loc) verb prefix indicating location of event on the neck or otherwise action pertaining to the neck",
+  "class": ""},
+ {"lemma": "-o1", "definition": "(Det)", "class": ""},
+ {"lemma": "-o2", "definition": "(Neg)", "class": ""},
+ {"lemma": "-o3", "definition": "3", "class": ""},
+ {"lemma": "-o4", "definition": "4", "class": ""},
+ {"lemma": "-oka",
+  "definition": "(PlImp) suffixes to verbs with a final -kV, replacing the -kV",
+  "class": ""},
+ {"lemma": "-ókko",
+  "definition": "(NegCop) verb suffix used in focus constructions to indicate `it is not the case that'; can be used to contradict an assertion or in the sense of a tag question seeking affirmation; suffixed to nouns to mean `it is not N'",
+  "class": ""},
+ {"lemma": "-oko",
+  "definition": "(Imp) verb suffix, may be used in conjunction with the PlImp to exhort",
+  "class": ""},
+ {"lemma": "-ona",
+  "definition": "(Cust) verb suffix indicating customary activity; with derived nouns, customary object nominal",
+  "class": ""},
+ {"lemma": "ona-", "definition": "(Loc) on, at, to", "class": ""},
+ {"lemma": "oo-",
+  "definition": "(Loc) verb prefix indicating action down in a liquid or something soft, or in the eye",
+  "class": ""},
+ {"lemma": "-òo-",
+  "definition": "(Repet) (nonproductive) verb suffix to primary stem to indicate repeated action",
+  "class": ""},
+ {"lemma": "-ooli",
+  "definition": "(Evid) on verbs indicates the speaker's commitment to the assertion or a given proposition whose polarity is questioned",
+  "class": ""},
+ {"lemma": "-óot",
+  "definition": "(Det) noun suffix indicating a nonspecific nonidentifiable particular or a choice of particulars as in `X or Y' or one from a list",
+  "class": ""},
+ {"lemma": "-osi",
+  "definition": "(Dim/Aug) verb suffix to indicate either intensity or extremity of an action or state or incomplete effect; with nouns has diminutive sense",
+  "class": ""},
+ {"lemma": "-oska",
+  "definition": "(Consq) verb suffix indicating a causal relationship between two clauses",
+  "class": ""},
+ {"lemma": "-óska",
+  "definition": "(Modl) derogative noun suffix indicating a negative or disapproving attitude towards the object",
+  "class": ""},
+ {"lemma": "ost-", "definition": "(Dir) go and", "class": ""},
+ {"lemma": "paa-", "definition": "(Loc) on top", "class": ""},
+ {"lemma": "-palammi", "definition": "(Adv) really, very", "class": ""},
+ {"lemma": "po-", "definition": "(Pron) I, me", "class": ""},
+ {"lemma": "-s",
+  "definition": "(Conn) verb suffix occurring most commonly before suffixes deriving from auxiliaries or on complement clauses especially before -t",
+  "class": ""},
+ {"lemma": "<s1>", "definition": "(PlSj)", "class": ""},
+ {"lemma": "<s2>", "definition": "(Pron)", "class": ""},
+ {"lemma": "-sa",
+  "definition": "(Evid) verb suffix indicating past action deduced by the speaker from circumstantial evidence",
+  "class": ""},
+ {"lemma": "-ska", "definition": "(Reas) since, because", "class": ""},
+ {"lemma": "-sta", "definition": "(Reas) since, because", "class": ""},
+ {"lemma": "-stoba",
+  "definition": "(Asp) verb suffix indicating action performed over an extended period of time, either duratively or repetitively",
+  "class": ""},
+ {"lemma": "-t",
+  "definition": "(Disc) suffix occurring on nouns (especially in the complex suffix -óot) indicating relationship to the proposition and on nonfinite verbs indicating various discourse functions including identity of referent and simultaneity of events or adverbial modification of main proposition",
+  "class": ""},
+ {"lemma": "-ta", "definition": "(Cntg) since, because; so", "class": ""},
+ {"lemma": "-taaka",
+  "definition": "(Evid) verb suffix indicating the speaker makes the statement based on hearsay evidence",
+  "class": ""},
+ {"lemma": "-taka",
+  "definition": "(Hort) verb suffix exhorting the hearer to allow the speaker to perform the event",
+  "class": ""},
+ {"lemma": "-táska",
+  "definition": "(Reas) verb suffix indicating that event is the reason or cause of some past action",
+  "class": ""},
+ {"lemma": "-ti",
+  "definition": "(Asp) proximal verb suffix indicating action in the recent past or future or narrative past",
+  "class": ""},
+ {"lemma": "-tika1", "definition": "(Hort)", "class": ""},
+ {"lemma": "-tika2", "definition": "(Cntrst)", "class": ""},
+ {"lemma": "-tíkko",
+  "definition": "(Neg) negative stem suffix on certain verbs, especially those ending in -chi (not -li-chi) and those with unusual stem shapes",
+  "class": ""},
+ {"lemma": "-tíkkó",
+  "definition": "(Contra) rather, to the contrary",
+  "class": ""},
+ {"lemma": "-to",
+  "definition": "(Pst) verb suffix indicating a past action in a nonmain clause",
+  "class": ""},
+ {"lemma": "-toha",
+  "definition": "(NarPst) verb suffix referring to remote past events especially in historical narratives or legends, can occur medially before consequential suffixes or finally",
+  "class": ""},
+ {"lemma": "-toho",
+  "definition": "(PstSq) verb suffix on nonmain clauses indicating a completed action that is prior to the action of some other clause, similar to a past perfect",
+  "class": ""},
+ {"lemma": "-toka",
+  "definition": "(PlImp) verb suffix to stems ending in a final -ka indicating a command",
+  "class": ""},
+ {"lemma": "-toska",
+  "definition": "(Consq) verb suffix indicating a past condition for a subsequent action, used mainly in questions",
+  "class": ""},
+ {"lemma": "-y-", "definition": "(Disc) poss. afterthought topic", "class": ""},
+ {"lemma": "-ya",
+  "definition": "(Deic) as a noun suffix marks new topic, including resumptive and afterthought topics; as a verb suffix marks background clauses with given information",
+  "class": ""},
+ {"lemma": "-yáali",
+  "definition": "(Adv) verb suffix indicating intensity of event or punctual action",
+  "class": ""},
+ {"lemma": "-yáami",
+  "definition": "(Modf) noun suffix indicating something is exactly like the noun in a certain respect",
+  "class": ""},
+ {"lemma": "-yáɬɬi", "definition": "(Adv) always, only, ever", "class": ""},
     { 
         "lemma":"dabiyo",
         "definition": "letter `W'",
