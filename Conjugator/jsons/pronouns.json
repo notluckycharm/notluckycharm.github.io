@@ -1,0 +1,38 @@
+{   "pronouns" : [
+    {
+        "stem": "ana",
+        "emph": "ano",
+        "trans": "I"
+    },
+
+    {
+        "stem": "isna",
+        "emph": "isno",
+        "trans": "You"
+    },
+  
+    {
+        "stem": "ibisna",
+        "emph": "ibisno",
+        "trans": "He/She"
+    },
+
+    {
+        "stem": "posna",
+        "emph": "posno",
+        "trans": "We"
+    },
+
+    {
+        "stem": "hasna",
+        "emph": "hasno",
+        "trans": "You all"
+    },
+
+    {
+        "stem": "hoibisna",
+        "emph": "hoibisno",
+        "trans": "They all"
+    }
+    ]
+}

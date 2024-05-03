@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Fernandes - Projects</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="conjugator_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Alabama Verb Conjugator</h1>
+        <p>Type a verb in its third person singular form(ex: "He does"), and I will conjugate it for you!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../projects.html">My Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="ui grid">
+            <div class="row">
+                <div class="left aligned column">
+                    <section id="Description" style="align-content: center;">
+                        <form id="textForm" onsubmit="generateDeclensionTable(event)">
+                            <input type="text" class="huge-input" id="textInput" placeholder="Enter verb here" required>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </section>
+                    <div>
+                        <div id="displayText"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="ui grid">
+            <div class="row">
+                <div>
+                    <div id="displayText"></div>
+                </div>
+            </div>
+        </div> -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jacob Fernandes</p>
+    </footer>
+</body>
+<script src="conjugator.js"></script>
+<script>
+    function generateDeclensionTable(event) {
+      event.preventDefault();
+      var stem = document.getElementById("textInput").value.replaceAll('ch', 'c');
+      // Declensions array
+      var declensions = [[
+        conjugate(stem, 1, 0).replaceAll('c', 'ch'), conjugate(stem, 2, 0).replaceAll('c', 'ch'),
+        conjugate(stem, 3, 0).replaceAll('c', 'ch'), conjugate(stem, 1, 1).replaceAll('c', 'ch'),
+        conjugate(stem, 2, 1).replaceAll('c', 'ch'), conjugate(stem, 3, 1).replaceAll('c', 'ch'),
+        ],
+        [coallesce(stem + 'aalo').replaceAll('c', 'ch'), conjugate(stem, 2, 0).replaceAll('c', 'ch') + 'lo',
+        conjugate(stem, 3, 0).replaceAll('c', 'ch') + 'lo', conjugate(stem, 1, 1).replaceAll('c', 'ch') + 'lo',
+        conjugate(stem, 2, 1).replaceAll('c', 'ch') + 'lo', conjugate(stem, 3, 1).replaceAll('c', 'ch') + 'lo',]
+        ];
+      
+      // Create table
+      var table = `<table>
+                    <tr>
+                        <th></th>
+                        <th colspan="3">Singular</th>
+                        <th colspan="3">Plural</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>first</td>
+                        <td>second</td>
+                        <td>third</td>
+                        <td>first</td>
+                        <td>second</td>
+                        <td>third</td>
+                    </tr>
+                    <tr>
+                        <td>Who?</td>
+                        <td><i>anok</i></td>
+                        <td><i>isnok</i></td>
+                        <td><i>ibisnok</i></td>
+                        <td><i>posnok</i></td>
+                        <td><i>hasnok</i></td>
+                        <td><i>hoibisnok</i></td>
+                    </tr>`;
+      table += "<tr><td>Present Affirmative</td>"
+      for (var i = 0; i < declensions[0].length; i++) {
+        table += "<td>"
+        table += declensions[0][i]
+        table += "</td>"
+      }
+      table += "</tr><tr><td>Future Affirmative</td>"
+      for (var i = 0; i < declensions[1].length; i++) {
+        table += "<td>"
+        table += declensions[1][i]
+        table += "</td>"
+      }
+      table += "</tr></table>";
+      
+      document.getElementById("displayText").innerHTML = table;
+    }
+  </script>
+</html>

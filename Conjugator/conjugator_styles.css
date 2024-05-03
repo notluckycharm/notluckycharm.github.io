@@ -1,0 +1,95 @@
+.column {
+    max-width: 800px; /* Maxes out at 800px */
+    width: 100%; /* Takes the width of its parent up to 800px */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.ui.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 0;
+    margin: -1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centers children horizontally within the row */
+    margin: auto;
+    width: 100% !important;
+}
+
+
+.left.aligned {
+    text-align: left;
+}
+
+.ui-divider {
+    border-top: 1px solid rgba(34,36,38,.15);
+    border-bottom: 1px solid hsla(0,0%,100%,.1);
+}
+
+.huge-input {
+    font-size: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: .67857143em 1em;
+    border: 1px solid rgba(34,36,38,.15);
+    color: rgba(0,0,0,.87);
+    border-radius: .28571429rem;
+    transition: box-shadow .1s ease,border-color .1s ease;
+    box-shadow: none;
+    box-sizing: inherit;
+    padding-right: 2.67142857em !important;
+}
+
+form, #displayText {
+    margin: 10px;
+    text-align: center;
+    box-sizing: inherit;
+  }
+.flex-container {
+    margin: 10px;
+    text-align: center;
+    box-sizing: inherit;
+}
+.Alabama {
+    color: #0d0d0d;
+    font-size: 16px;
+}
+
+.Translation {
+    font-style: italic;
+    color: #777;
+    font-size: 16px;
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    background-color: #f3f3f3;
+}
+
+select.custom-select {
+    background-color: white;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 5px; /* Rounded border */
+    font-size: 18px; /* Font size */
+    padding: 5px; /* Padding around the text */
+    font-weight: bold; /* Bold text */
+    text-align: center;
+    color: rgb(133, 40, 40);
+  }
+
+span.stem {
+    font-size: 28px;
+    color: rgb(133, 40, 40);
+}
+
+span.nominalsuffix {
+    font-size: 28px;
+    color: rgb(139, 44, 245);
+}
