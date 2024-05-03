@@ -152,6 +152,16 @@
                                     </div>
                                 </div>`
                             }
+                            if (obj[el].principalPart != "nan") {
+                                var parts = ['second person singular', 'first person plural', 'second person plural']
+                                for (var part in obj[el].principalPart.split(',')) {
+                                    divs += `<div class="principalPart">`
+                                    divs += `<span>` + parts[part] + `: </span>`
+                                    divs += `<em>` + obj[el].principalPart.split(',')[part] + `</em>`
+                                    divs += `</div>`
+                                }
+
+                            }
                             if ((el < obj.length - 1 && obj.length < 50) || (el < 49 && obj.length >= 50)) {
                                 divs += `<div class="ui-divider"></div>`
                             }
