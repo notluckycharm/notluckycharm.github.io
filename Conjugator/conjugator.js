@@ -100,6 +100,9 @@ var consonants = ['b', 'c', 'd', 'f', 'h',
     }
 
 function dativeConjugate(string, person, plurality) {
+    if (string[0] && string[1] == 'im') {
+        string = string.slice(2);
+    }
     if (person == 1 && plurality == 0) {
         return 'am' + string;
     }
