@@ -128,8 +128,8 @@
     { 
         "lemma":"kalasli",
         "definition": "to cut with scissors, shear",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "kalassi, kalashili, kalashachi"
     },
     { 
         "lemma":"Kalfisti",
@@ -230,7 +230,7 @@
     { 
         "lemma":"kamassa",
         "definition": "to be forceful, strong, solid, powerful",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -260,7 +260,7 @@
     { 
         "lemma":"kamoska",
         "definition": "to be spoiled, sour (of milk); to smell bad, as of body odor or spoiled or rancid food, stink",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -386,7 +386,7 @@
     { 
         "lemma":"kapàalichi",
         "definition": "to make a rattling, banging, hammering, tapping or rumbling noise",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -542,7 +542,7 @@
     { 
         "lemma":"kàsi",
         "definition": "younger son, any son after the first born son, younger brother",
-        "class": "nan",
+        "class": "AM-p",
         "principalPart": "nan"
     },
     { 
@@ -1112,7 +1112,7 @@
     { 
         "lemma":"kolkohka batatli",
         "definition": "for lightning to strike",
-        "class": "nan",
+        "class": "3/CHA-",
         "principalPart": "nan"
     },
     { 
@@ -1664,7 +1664,7 @@
     { 
         "lemma":"koyaabi",
         "definition": "to be sickly, unwell, feeling bad chronically, in ill health; to be mortally wounded",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -2438,8 +2438,8 @@
     { 
         "lemma":"haɬapka",
         "definition": "to kick once; to beat in a ball game",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "haɬapiska, haɬapilka, haɬapaska"
     },
     { 
         "lemma":"haɬaplichi",
@@ -2906,7 +2906,7 @@
     { 
         "lemma":"hasaaya",
         "definition": "to sulk, pout, be angry, be mad, hot-tempered; to play possum",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -3578,7 +3578,7 @@
     { 
         "lemma":"hawi",
         "definition": "to be sexually promiscuous",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -3944,8 +3944,8 @@
     { 
         "lemma":"hiɬi",
         "definition": "to fast ritually",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "hiɬchi, hiɬhili, hiɬhachi"
     },
     { 
         "lemma":"hiɬikchi",
@@ -4556,7 +4556,7 @@
     { 
         "lemma":"hoba",
         "definition": "to be castrated",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -4574,7 +4574,7 @@
     { 
         "lemma":"hobakchi",
         "definition": "to be idle, lazy, irresponsible, shiftless; to be incapable of doing anything, to feel under the weather and not up to doing anything",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -4874,8 +4874,8 @@
     { 
         "lemma":"hóknòosi",
         "definition": "wife, older woman, `old lady'",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "CHA-",
+        "principalPart": "often hypocoristic, no possessor marking"
     },
     { 
         "lemma":"hoknòssòoba",
@@ -5228,7 +5228,7 @@
     { 
         "lemma":"holitli",
         "definition": "to die (?)",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -6428,8 +6428,8 @@
     { 
         "lemma":"liska",
         "definition": "to beat, whip, spank; to pound, squeeze open in a vice; to gradually flatten, beat down flat",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "lisiska, lisilka, lisaska"
     },
     { 
         "lemma":"lisoka",
@@ -7184,7 +7184,7 @@
     { 
         "lemma":"maama",
         "definition": "mother, mama",
-        "class": "nan",
+        "class": "AM-p",
         "principalPart": "nan"
     },
     { 
@@ -7376,8 +7376,8 @@
     { 
         "lemma":"maasóobi",
         "definition": "to bend over at the waist",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "maasóobitiska, maasóobitilka, maasóobitaska"
     },
     { 
         "lemma":"maasoobìichi",
@@ -7520,8 +7520,8 @@
     { 
         "lemma":"maatàaya",
         "definition": "to go to the bathroom (of one or two)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "maatachìiya, maatalìiya, maataachìiya"
     },
     { 
         "lemma":"maatabalàaka",
@@ -7712,8 +7712,8 @@
     { 
         "lemma":"maatimmisli",
         "definition": "to give someone a funny look, look askance at",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/AM-",
+        "principalPart": "maatimmissi, maatimmishili, maatimmishachi"
     },
     { 
         "lemma":"maatiⁿháalo",
@@ -8060,7 +8060,7 @@
     { 
         "lemma":"maɬahli",
         "definition": "to be wild, scared (of several)",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -8132,7 +8132,7 @@
     { 
         "lemma":"manka",
         "definition": "to say, ask",
-        "class": "nan",
+        "class": "-LI/3",
         "principalPart": "maiⁿska, maiⁿlka, maaⁿska"
     },
     { 
@@ -8372,7 +8372,7 @@
     { 
         "lemma":"minti",
         "definition": "to come",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -9272,8 +9272,8 @@
     { 
         "lemma":"okchaaya",
         "definition": "to come alive",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "CHA-",
+        "principalPart": "as with other verbs of this shape whose last syllable begins with /l/, /h/, or /y/ the place of infixation is irregular and the pattern is that of verbs with a closed penultimate syllable"
     },
     { 
         "lemma":"okcháaya",
@@ -10412,7 +10412,7 @@
     { 
         "lemma":"òlmo",
         "definition": "to be mixed into a paste with water (as flour, mud, cement, etc.)",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -11078,8 +11078,8 @@
     { 
         "lemma":"ononoyya",
         "definition": "to climb (of one)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "ononochiyya, -, -"
     },
     { 
         "lemma":"onoofa",
@@ -11546,7 +11546,7 @@
     { 
         "lemma":"oolakano",
         "definition": "to be at peace, be friendly, be peaceful",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -11750,7 +11750,7 @@
     { 
         "lemma":"òomo",
         "definition": "to be mixed up, as dry and wet ingredients forming a paste, dough, or batter (as cement, mud, etc.)",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -11810,8 +11810,8 @@
     { 
         "lemma":"oopaffichi",
         "definition": "to take out of water, dip out",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "oopafchichi, oopafhilichi, oopafhachichi"
     },
     { 
         "lemma":"oopihli",
@@ -12044,8 +12044,8 @@
     { 
         "lemma":"ooyoffi",
         "definition": "to make the motions of sexual intercourse",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "ooyofchi, ooyofhili, ooyofhachi"
     },
     { 
         "lemma":"ooyohbi",
@@ -12146,14 +12146,14 @@
     { 
         "lemma":"osɬoyka",
         "definition": "to commute, go and come back (of one); to go to the bathroom",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "osɬoyiska, -, -"
     },
     { 
         "lemma":"osɬoyòoka",
         "definition": "to commute, go and come back (of more than one); to go to the bathroom",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "-, osɬoyòohilka, osɬoyòohaska"
     },
     { 
         "lemma":"osnochi",
@@ -13730,8 +13730,8 @@
     { 
         "lemma":"nakaɬaachi",
         "definition": "to lose, get rid of (one object), make someone leave; to kill",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "nakaɬaachiska, nakaɬaachilka, nakaɬaachaska"
     },
     { 
         "lemma":"nakaɬkìiyo",
@@ -14390,8 +14390,8 @@
     { 
         "lemma":"niplichi",
         "definition": "to cut up or butcher into parts, dismember; to take little pieces of to nibble",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "nipchichi, niphilichi, niphachichi"
     },
     { 
         "lemma":"nipo",
@@ -14714,8 +14714,8 @@
     { 
         "lemma":"nokhammi",
         "definition": "to be in a rage, angry, mad",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "CHA-; -LI",
+        "principalPart": "nokhanchi, nokhaⁿhili, nokhaⁿhachi"
     },
     { 
         "lemma":"nokhammitíkko",
@@ -15122,8 +15122,8 @@
     { 
         "lemma":"nootahapka",
         "definition": "to cut a hole in an animal's throat to let blood out",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "nootahapiska, nootahapilka, nootahapaska"
     },
     { 
         "lemma":"nootakba",
@@ -15176,7 +15176,7 @@
     { 
         "lemma":"nooyatakàaka",
         "definition": "to have something stuck crosswise in the throat (as a bone)",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -16604,7 +16604,7 @@
     { 
         "lemma":"chiichi",
         "definition": "penis",
-        "class": "nan",
+        "class": "AM-p",
         "principalPart": "nan"
     },
     { 
@@ -16922,8 +16922,8 @@
     { 
         "lemma":"chiɬɬichi",
         "definition": "to chip, flake (with a tool)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "chiɬchichi, chiɬhilichi chiɬɬhachichi"
     },
     { 
         "lemma":"chiɬɬoɬo",
@@ -17294,8 +17294,8 @@
     { 
         "lemma":"chiyahlichi",
         "definition": "to walk (e.g. a dog), take for a walk",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "chiyahchichi, chiyahhilichi, chiyahhachichi"
     },
     { 
         "lemma":"chiyahlitíkko",
@@ -17336,7 +17336,7 @@
     { 
         "lemma":"chocho",
         "definition": "vagina",
-        "class": "nan",
+        "class": "AM-p",
         "principalPart": "nan"
     },
     { 
@@ -18098,7 +18098,7 @@
     { 
         "lemma":"chookma",
         "definition": "to be good",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -18134,7 +18134,7 @@
     { 
         "lemma":"chòosi",
         "definition": "any daughter after the first born daughter",
-        "class": "nan",
+        "class": "AM-p",
         "principalPart": "nan"
     },
     { 
@@ -18698,7 +18698,7 @@
     { 
         "lemma":"takkobi",
         "definition": "to be lazy",
-        "class": "nan",
+        "class": "CHA-?",
         "principalPart": "nan"
     },
     { 
@@ -18896,8 +18896,8 @@
     { 
         "lemma":"talbòoli",
         "definition": "to make, fix (one object); to beat, mix, make (a cake)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "talbòochi, talbòohili, talbòohachi"
     },
     { 
         "lemma":"talbóolit anooli",
@@ -19250,8 +19250,8 @@
     { 
         "lemma":"taɬiipa",
         "definition": "to be a hundred",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "taɬiipatiska, taɬiipatilka, taɬiipataska"
     },
     { 
         "lemma":"taɬiipaspókkòoli",
@@ -19394,14 +19394,14 @@
     { 
         "lemma":"taɬɬi",
         "definition": "to square (off), plane off the sides of (several things), slice up, cut up (e.g. a log)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "taɬchi, taɬhili, taɬhachi"
     },
     { 
         "lemma":"taɬɬichi",
         "definition": "to slice off the sides of (several things) repeatedly, mark blazes",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "taɬchichi, taɬhilichi, taɬhachichi"
     },
     { 
         "lemma":"táɬɬìipa",
@@ -19994,7 +19994,7 @@
     { 
         "lemma":"tayyihon pilàachi",
         "definition": "to rape (a woman)",
-        "class": "nan",
+        "class": "-LI/3",
         "principalPart": "nan"
     },
     { 
@@ -20114,8 +20114,8 @@
     { 
         "lemma":"tiiɬi",
         "definition": "to push gently with the elbow or shoulder, nudge",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "tiɬchi, tiɬhili, tiɬhachi"
     },
     { 
         "lemma":"tiina",
@@ -21362,8 +21362,8 @@
     { 
         "lemma":"isbakahli",
         "definition": "to throw down (as in wrestling); to throw with (e.g a certain hand); to throw at with something; to throw away; to rape",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-; -LI/CHA-/3",
+        "principalPart": "isbakahchi, isbakahhili, isbakahhachi"
     },
     { 
         "lemma":"isbakbasíkko",
@@ -21494,8 +21494,8 @@
     { 
         "lemma":"isbaskíichi",
         "definition": "to talk a long time",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "isbaskíichitiska, isbaskíichitilka, isbaskíichitaska"
     },
     { 
         "lemma":"isbatatka",
@@ -22142,8 +22142,8 @@
     { 
         "lemma":"iskochi",
         "definition": "to water, make someone drink",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "iskochiska, iskochilka, iskochaska"
     },
     { 
         "lemma":"iskochiichi",
@@ -22808,8 +22808,8 @@
     { 
         "lemma":"istabanàaka",
         "definition": "to mount (a female) for sexual intercourse",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "istabanàahiska, istabanàahilka, istabanàahaska"
     },
     { 
         "lemma":"istabanatli",
@@ -23108,8 +23108,8 @@
     { 
         "lemma":"istállàamiichi",
         "definition": "to make fun of, mock, tease, joke or kid about (something)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-/3",
+        "principalPart": "istállàanchichi, istállàaⁿhilichi, istállàaⁿhachichi"
     },
     { 
         "lemma":"istalpasoilka",
@@ -23876,8 +23876,8 @@
     { 
         "lemma":"istiliichoba",
         "definition": "to act stubborn, be uncooperative",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "istiliichobatiska, istiliichobatilka, istiliichobataska"
     },
     { 
         "lemma":"istiliitiɬifilka",
@@ -24314,7 +24314,7 @@
     { 
         "lemma":"istimilli",
         "definition": "to lose at dominoes",
-        "class": "nan",
+        "class": "AM-",
         "principalPart": "nan"
     },
     { 
@@ -24440,7 +24440,7 @@
     { 
         "lemma":"istimonkachi",
         "definition": "genitals",
-        "class": "nan",
+        "class": "AM-p",
         "principalPart": "nan"
     },
     { 
@@ -24482,7 +24482,7 @@
     { 
         "lemma":"istimpaahomma",
         "definition": "to get mad, angry",
-        "class": "nan",
+        "class": "AM-",
         "principalPart": "nan"
     },
     { 
@@ -24542,8 +24542,8 @@
     { 
         "lemma":"istimposaachi",
         "definition": "to be jealous of, envy someone; to tease someone because of jealousy; to make things bad for someone",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/AM-",
+        "principalPart": "istimposaatiska, istimposaatilka, istimposaataska"
     },
     { 
         "lemma":"istimposaachitilka",
@@ -24746,7 +24746,7 @@
     { 
         "lemma":"istiⁿholiswa",
         "definition": "genitals (male or female)",
-        "class": "nan",
+        "class": "AM-p",
         "principalPart": "nan"
     },
     { 
@@ -24920,7 +24920,7 @@
     { 
         "lemma":"istiⁿsokcha",
         "definition": "to be addicted to, be crazy about, be a fan of",
-        "class": "nan",
+        "class": "3/AM-",
         "principalPart": "nan"
     },
     { 
@@ -25832,8 +25832,8 @@
     { 
         "lemma":"itaafolòoka",
         "definition": "to get married, wed (of one); to lie down with (of one)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "itaafolòohiska, -, -"
     },
     { 
         "lemma":"itaafolòolichi",
@@ -26036,7 +26036,7 @@
     { 
         "lemma":"itanakaaɬa",
         "definition": "to die and have the spirit walk the earth, not go to heaven",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -26180,8 +26180,8 @@
     { 
         "lemma":"itoballi",
         "definition": "to cook",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "itobalchi, itobalhili, itobalhachi"
     },
     { 
         "lemma":"ittaamatli",
@@ -29852,7 +29852,7 @@
     { 
         "lemma":"bafko",
         "definition": "to be gray (especially of an animal, such as a Brahma bull)",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -30410,8 +30410,8 @@
     { 
         "lemma":"batatli",
         "definition": "to hit (once); to beat in a game",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "batatchi, batathili, batathachi"
     },
     { 
         "lemma":"bátchàali",
@@ -30782,8 +30782,8 @@
     { 
         "lemma":"biɬiika",
         "definition": "to poke a hole in the ground to plant a seed",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "biɬiihiska, biɬiihilka, biɬiihaska"
     },
     { 
         "lemma":"biɬìika",
@@ -30920,7 +30920,7 @@
     { 
         "lemma":"bitiima",
         "definition": "to be spoiled, smelly, decomposing (of dead things), stink",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -31040,8 +31040,8 @@
     { 
         "lemma":"bokli",
         "definition": "to shuck, shell, hull (peas)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "bokchi, bokhili, bokhachi"
     },
     { 
         "lemma":"bokoko",
@@ -31994,7 +31994,7 @@
     { 
         "lemma":"walwaki",
         "definition": "to be tender (as of ripe fruit, young shoots or young animals)",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -34658,8 +34658,8 @@
     { 
         "lemma":"abititlichi",
         "definition": "to weight down, press down on",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "abititchichi, abitithilichi, abitithachichi"
     },
     { 
         "lemma":"abitkachi",
@@ -35102,8 +35102,8 @@
     { 
         "lemma":"achoskachi",
         "definition": "to be right behind, stick close to, cling to (of more than one)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "-, achoskachitilka, achoskachitaska"
     },
     { 
         "lemma":"achosli",
@@ -35210,8 +35210,8 @@
     { 
         "lemma":"afaalichi",
         "definition": "to laugh at, ridicule, tease; to make laugh",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "afaachichi, afaahilichi, afaahachichi"
     },
     { 
         "lemma":"afaíkko",
@@ -35480,8 +35480,8 @@
     { 
         "lemma":"ahíina",
         "definition": "to be together with, stay with; to watch over, protect, guard",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "ahíinatiska, ahíinatilka, ahíinataska"
     },
     { 
         "lemma":"ahíinatíkko",
@@ -36776,7 +36776,7 @@
     { 
         "lemma":"alóttòoka",
         "definition": "to be full (of containers), crowded",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -36998,8 +36998,8 @@
     { 
         "lemma":"aɬipìili",
         "definition": "to cover, put a lid on, shut (one object); to drape with; to roof (a house)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "aɬipìichi, aɬipìihili, aɬipìihachi"
     },
     { 
         "lemma":"aɬipli",
@@ -37274,7 +37274,7 @@
     { 
         "lemma":"anoolo",
         "definition": "to be mine, belong to me; I'm the one, I'm it",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -37370,8 +37370,8 @@
     { 
         "lemma":"apakfotka",
         "definition": "to encircle (once or of one)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "apakfotiska, apakfotilka, apakfotaska"
     },
     { 
         "lemma":"apakfótko",
@@ -37382,8 +37382,8 @@
     { 
         "lemma":"apakfotli",
         "definition": "to encircle, be around, go around (once or of one)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "apakfotchi, apakfothili, apakfothachi"
     },
     { 
         "lemma":"apakɬòolichi",
@@ -37538,8 +37538,8 @@
     { 
         "lemma":"apayli",
         "definition": "to roast; to parch (e.g. corn); to fry (e.g. bacon, cracklins, pork skins)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "apaychi, apayhili, apayhachi"
     },
     { 
         "lemma":"apihchi",
@@ -37628,7 +37628,7 @@
     { 
         "lemma":"apolooma",
         "definition": "to have been sexually aroused",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -37736,8 +37736,8 @@
     { 
         "lemma":"apotòoli",
         "definition": "to join one to another, put next to, add on to, expand (one object)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "apotòochi, apotòohili, apotòohachi"
     },
     { 
         "lemma":"apotòolichi",
@@ -37940,7 +37940,7 @@
     { 
         "lemma":"assachi",
         "definition": "to have diarrhea",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -38690,7 +38690,7 @@
     { 
         "lemma":"ayaanaki",
         "definition": "to slope downward, be sloping, slant",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -38936,8 +38936,8 @@
     { 
         "lemma":"ayokchi",
         "definition": "to impregnate, beget, get with child, make someone pregnant",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-; -LI/AM-",
+        "principalPart": "ayokchiska, ayokchaska, ayokchilka"
     },
     { 
         "lemma":"ayokíkpo",
@@ -40112,8 +40112,8 @@
     { 
         "lemma":"saapoli",
         "definition": "to carry on the back",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "saapochi, saapohili, saapohachi"
     },
     { 
         "lemma":"Sabìina",
@@ -41366,7 +41366,7 @@
     { 
         "lemma":"sokcha",
         "definition": "to be loose, baggy",
-        "class": "nan",
+        "class": "Other Verb",
         "principalPart": "nan"
     },
     { 
@@ -41708,8 +41708,8 @@
     { 
         "lemma":"soobi",
         "definition": "to stoop over, bend over",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "soobitiska, soobitilka, soobitaska"
     },
     { 
         "lemma":"soobìichi",
@@ -41786,8 +41786,8 @@
     { 
         "lemma":"sopatli",
         "definition": "to get (something) clean",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "sopatchi, sopathili, sopathachi"
     },
     { 
         "lemma":"sopiika",
@@ -42236,8 +42236,8 @@
     { 
         "lemma":"filammi",
         "definition": "to fork off, take a fork off a main route, branch off, cut off from a main path (of one)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "filanchi, -, -"
     },
     { 
         "lemma":"filammichi",
@@ -42446,7 +42446,7 @@
     { 
         "lemma":"folòoka",
         "definition": "to have the flu, influenza",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -42650,8 +42650,8 @@
     { 
         "lemma":"fosli",
         "definition": "to shell, hull, shuck (peas), peel (with the hands), take bark off, strip leaves",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "foschi, foshili, foshachi"
     },
     { 
         "lemma":"fóssòoba",
@@ -42692,7 +42692,7 @@
     { 
         "lemma":"paabokanta",
         "definition": "to be humpbacked, hunchbacked, stooped",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -42716,7 +42716,7 @@
     { 
         "lemma":"paabonotka",
         "definition": "to be round-shouldered, bent over, hunchbacked, have a crooked back",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -42878,8 +42878,8 @@
     { 
         "lemma":"paachokòoli",
         "definition": "to sit on top of, perch, alight (as a bird), mount (a horse) (of one)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "paachokòochi, -, -"
     },
     { 
         "lemma":"paachokoolichi",
@@ -42926,8 +42926,8 @@
     { 
         "lemma":"paahachàali",
         "definition": "to step on, climb (steps or rungs); to do someone wrong, put down someone (of one)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "paahachàachi, paahachàahili, paahachàahachi"
     },
     { 
         "lemma":"paahachaalichi",
@@ -44288,8 +44288,8 @@
     { 
         "lemma":"pilàachi",
         "definition": "to bother, distract, worry, heckle, pester; to have sexual intercourse with",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "pilàatiska, pilàatilka, pilàataska"
     },
     { 
         "lemma":"píllàachi",
@@ -44684,7 +44684,7 @@
     { 
         "lemma":"pokkotòoli istiⁿsokcha",
         "definition": "to be a fan of, crazy about playing ball",
-        "class": "nan",
+        "class": "3/AM-",
         "principalPart": "nan"
     },
     { 
@@ -45698,7 +45698,7 @@
     { 
         "lemma":"ibiisanífkàasi",
         "definition": "to have a wrinkled face; to be getting thin around the face",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -46106,8 +46106,8 @@
     { 
         "lemma":"ichoksommichi",
         "definition": "to make someone kiss (by holding up a baby for example to the other person)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "ichoksonchichi, ichoksoⁿhilichi, ichoksoⁿhachichi"
     },
     { 
         "lemma":"ichoksonka",
@@ -46250,7 +46250,7 @@
     { 
         "lemma":"ichoolaksin imbaskichi",
         "definition": "to stick out (the tongue) at",
-        "class": "nan",
+        "class": "-LI/AM-/3",
         "principalPart": "nan"
     },
     { 
@@ -47264,7 +47264,7 @@
     { 
         "lemma":"ikchi",
         "definition": "penis",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -47336,13 +47336,13 @@
     { 
         "lemma":"iki",
         "definition": "mother; mother (of an animal), dam",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "CHA-; AM-p",
+        "principalPart": "your mother= chimiki, y'all's mother= hachimiki, their mother= aatiki"
     },
     { 
         "lemma":"ikichòoba",
         "definition": "mother, old lady",
-        "class": "nan",
+        "class": "CHA-",
         "principalPart": "nan"
     },
     { 
@@ -48278,8 +48278,8 @@
     { 
         "lemma":"iliisiihli",
         "definition": "to take off (clothes), undress oneself, strip off, remove more than one article of clothing",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/3",
+        "principalPart": "iliisiihchi, iliisiihhili, iliisiihhachi"
     },
     { 
         "lemma":"iliisiipli",
@@ -48914,14 +48914,14 @@
     { 
         "lemma":"ilommachi",
         "definition": "to dress up in costume, uniform, or finery, be well dressed",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI",
+        "principalPart": "ilommachitiska, ilommachitilka, ilommachitaska"
     },
     { 
         "lemma":"ilommachiichi",
         "definition": "to dress (someone) up in costume, uniform, or finery",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/CHA-",
+        "principalPart": "ilommachiitiska, ilommachiitilka, ilommachiitaska"
     },
     { 
         "lemma":"ilonaksoopli",
@@ -49172,7 +49172,7 @@
     { 
         "lemma":"imaatchòoba",
         "definition": "husband, `old man'",
-        "class": "nan",
+        "class": "AM-p",
         "principalPart": "nan"
     },
     { 
@@ -49802,7 +49802,7 @@
     { 
         "lemma":"imawanha",
         "definition": "to be constipated",
-        "class": "nan",
+        "class": "AM-",
         "principalPart": "nan"
     },
     { 
@@ -50330,8 +50330,8 @@
     { 
         "lemma":"immaɬahli",
         "definition": "to be scared of, afraid of, frightened by (more than one)",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "CHA-/AM-",
+        "principalPart": "(WP, VC)"
     },
     { 
         "lemma":"immaɬatka",
@@ -51050,7 +51050,7 @@
     { 
         "lemma":"inchichi",
         "definition": "penis",
-        "class": "nan",
+        "class": "AM-p",
         "principalPart": "nan"
     },
     { 
@@ -51170,7 +51170,7 @@
     { 
         "lemma":"inchoocho",
         "definition": "vagina",
-        "class": "nan",
+        "class": "AM-p",
         "principalPart": "nan"
     },
     { 
@@ -52208,7 +52208,7 @@
     { 
         "lemma":"innokhammi",
         "definition": "to be in a rage at, angry at, mad at",
-        "class": "nan",
+        "class": "CHA-/AM-",
         "principalPart": "nan"
     },
     { 
@@ -52376,8 +52376,8 @@
     { 
         "lemma":"iⁿsikòopa",
         "definition": "to pray to",
-        "class": "nan",
-        "principalPart": "nan"
+        "class": "-LI/AM-",
+        "principalPart": "iⁿsikòopatiska, iⁿsikòopatilka, iⁿsikòopataska"
     },
     { 
         "lemma":"iⁿsimohka",
@@ -52430,7 +52430,7 @@
     { 
         "lemma":"iⁿsobotlichi",
         "definition": "to pass gas",
-        "class": "nan",
+        "class": "AM-",
         "principalPart": "nan"
     },
     { 
