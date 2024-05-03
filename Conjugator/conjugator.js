@@ -118,22 +118,22 @@ function dativeConjugate(string, person, plurality) {
 }
 
 function negateConjugate(string, person, plurality) {
-    var syllables = syllabify(string);
-    if (syllables.length == 1 || (syllables.length == 2 && syllables[1].length == 1)) {
+    var syllables = syllabify(string).reverse();
+    if (syllables.length === 1 || (syllables.length === 2 && syllables[1].length === 1)) {
         string = string.slice(1)
-        if (person == 1 && plurality == 0) {
+        if (person === 1 && plurality === 0) {
             return 'ák' + coallesce(string +'o');
         }
-        else if (person == 2 && plurality ) {
+        else if (person === 2 && plurality === 0) {
             return 'chík' + coallesce(string + 'o')
         }
-        else if (person == 3 && plurality) {
+        else if (person === 3 && plurality === 0) {
             return 'ík' + coallesce(string + 'o')
         }
-        else if (person == 1 && plurality == 1) {
+        else if (person === 1 && plurality === 1) {
             return 'kíl' + coallesce(string + 'o')
         }
-        else if (person == 2 && plurality == 1) {
+        else if (person === 2 && plurality === 1) {
             return 'hachík' + coallesce(string + 'o')
         }
         else {
