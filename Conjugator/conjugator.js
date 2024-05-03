@@ -21,17 +21,18 @@ var consonants = ['b', 'c', 'd', 'f', 'h',
         return sylls;
     }
     function coallesce(string) {
-        for (var i = 0; i < string.length - 1; i++) {
-            if (vowels.includes(string[i]) && vowels.includes(string[i + 1] 
-                && string[i] != string[i + 1])) {
-                    string = string.slice(0,i) + string.slice(i + 1,string.length);
-                }
-            else if (i < string.length - 2) {
-                if (vowels.includes(string[i]) && vowels.includes(string[i + 1]) 
-                && vowels.includes(string[i + 2])) {
-                    string = string.slice(0,i) + string.slice(i + 1,string.length);
-                }
-            }
+        var prev = ""
+        for (var i = 0; i < string.length; i++) {
+          if (vowels.includes(string[i]) && prev !== "") {
+            string = string.slice(0,prev) + string.slice(prev + 1);
+            prev = "";
+          }
+          else if (vowels.includes(string[i]) && prev === "") {
+            prev = i;
+          }
+          else if (consonants.includes(string[i])) {
+            prev = "";
+          }
         }
         return string
     }
