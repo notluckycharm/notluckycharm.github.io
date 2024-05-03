@@ -118,6 +118,75 @@ function dativeConjugate(string, person, plurality) {
     else {return 'aatim' + string;}
 }
 
+function patientConjugate(string, person, plurality) {
+    if (person == 3) {
+        return string;
+    }
+    if (string[0] == 'i') {
+        string = string.slice(1);
+    }
+    if (consonants.includes(string[0])) {
+        switch(person) {
+            case 2:
+                if (plurality == 0) {
+                    return 'hachi' + string;
+                }
+                else {
+                    return 'chi' + string;
+                } 
+            case 1:
+                if (plurality == 0) {
+                    return 'cha' + string;
+                }
+                else {
+                    return 'po' + string;
+                }
+        }
+    }
+    else {
+        if (string[0] == string[1]) {
+            switch(person) {
+                case 1:
+                    if (plurality == 0) {
+                        return 'ach' + string;
+                    }
+                    else {
+                        return `apoo` + string.slice(2);
+                    }
+                case 2:
+                    if (plurality == 0) {
+                        return `achii` + string.slice(2);
+                    }
+                    else {
+                        return 'ahachii' + string.slice(2);
+                    }
+                default:
+                    return string;
+            }
+        }
+        else {
+            switch(person) {
+                case 1:
+                    if (plurality == 0) {
+                        return 'ach' + string   ;
+                    }
+                    else {
+                        return 'apo' + string.slice(1);
+                    }
+                case 2:
+                    if (plurality == 0) {
+                        return 'achi' + string.slice(1);
+                    }
+                    else {
+                        return 'ahachi' + string.slice(1);
+                    }
+                default:
+                    return string;
+            }
+        }
+    }
+}
+
 function negateConjugate(string, person, plurality) {
     var syllables = syllabify(string).reverse();
     if (syllables.length === 1 || (syllables.length === 2 && syllables[1].length === 1)) {
@@ -140,6 +209,9 @@ function negateConjugate(string, person, plurality) {
         else {
             return 'ohík' + coallesce(string + 'o')
         }
+    }
+    else if (isAlabamaFrame(string) && syllables[0] == "") {
+        return string;
     }
     else {return string;}
 }
