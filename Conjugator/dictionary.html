@@ -55,6 +55,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <div>
+                                <button style="cursor: pointer" onclick="updateResults(-50)"><</button>
+                                <span id="resultCount">0 - 0 Results Shown out of 0</span>
+                                <button style="cursor: pointer" onclick="updateResults(50)">></button>
+                            </div>
                             <div id="searchWords" class="left aligned center-container">
                             </div>
                             <div class="ui-divider"></div>
@@ -74,6 +79,8 @@
         </main>
         <script>
             var mode = "default";
+            var shown = 0;
+            var shownMax = 50;
             function useRE() {
                 if (mode == "default") {
                     mode = "re";
@@ -135,6 +142,7 @@
                     }
                 }
                 function reMatch(re, string) {
+                    re.replace('C', 'bcdfhklɬmnpstwy')
                     var regEx = new RegExp(re);
                     return regEx.test(string);
                 }
@@ -153,21 +161,21 @@
                                 removeAccents(a.lemma.toLowerCase()).includes(string) || a.definition.toLowerCase().includes(string));
                         }
                         else {
-                            console.log(string);
                             obj = obj.filter((a) =>
                                 reMatch(string, a.lemma) || reMatch(string.toLowerCase()))
                         }
                         obj = obj.sort(stateMachineSort);
-                        for (var el in obj.slice(0,50)) {
+                        var slice = obj.slice(shown, shown + 50);
+                        for (var el in slice) {
                             divs += `<div class="left aligned center-container">
                                     <div class="word">
-                                        <span>` + obj[el].lemma + `</span>
+                                        <span>` + slice[el].lemma + `</span>
                                     </div>
                                     <div class="definition">
-                                        <span>` + obj[el].definition
+                                        <span>` + slice[el].definition
                                             
-                            if (obj[el].class != "nan") {
-                                divs += "&nbsp;" + "[" + obj[el].class + "]" + `</span>
+                            if (slice[el].class != "nan") {
+                                divs += "&nbsp;" + "[" + slice[el].class + "]" + `</span>
                                     </div>
                                 </div>`
                             }
@@ -178,26 +186,44 @@
                             }
                             if (obj[el].principalPart != "nan") {
                                 var parts = ['second person singular', 'first person plural', 'second person plural']
-                                for (var part in obj[el].principalPart.split(',')) {
+                                for (var part in slice[el].principalPart.split(',')) {
                                     divs += `<div class="principalPart">`
                                     divs += `<span>` + parts[part] + `: </span>`
-                                    divs += `<em>` + obj[el].principalPart.split(',')[part] + `</em>`
+                                    divs += `<em>` + slice[el].principalPart.split(',')[part] + `</em>`
                                     divs += `</div>`
                                 }
 
                             }
-                            if ((el < obj.length - 1 && obj.length < 50) || (el < 49 && obj.length >= 50)) {
+                            if ((el < slice.length - 1 && slice.length < 50) || (el < 49 && slice.length >= 50)) {
                                 divs += `<div class="ui-divider"></div>`
                             }
                             
                         }
                         document.getElementById('searchWords').innerHTML = divs;
+                        shownMax = obj.length
+                        document.getElementById('resultCount').innerHTML = shown + " - " + (parseInt(shown) + Math.min(50,shownMax - shown)) + " Results Shown out of " + obj.length;
                         return 0;
                      })
                      .catch((error) => console.error("Unable to fetch data:", error));
                 // var data = fetchJSONData();
                 // console.log(data);
                 
+            }
+            function updateResults(count) {
+                console.log(count)
+                console.log(shown);
+                if (shown + count < 0) {
+                    shown = 0;
+                    dictSort();
+                }
+                else if (shown + count > shownMax) {
+                    shown = shownMax;
+                    dictSort();
+                }
+                else {
+                    shown += count;
+                    dictSort();
+                }
             }
         </script>
     </body>
