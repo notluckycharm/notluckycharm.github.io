@@ -98,12 +98,12 @@
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch('.{');addToSearch(document.getElementById('reSearchSet').value);addToSearch('}');dictSort()">Search</button>
                                 </li>
                                 <li>
-                                    Search for a word with one or more instances of a string in a row:
-                                    <input id="reSearchRep" class="search-bar" type="text" placeholder="li">
-                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch('(');addToSearch(document.getElementById('reSearchRep').value);addToSearch(')+');dictSort()">Search</button>
+                                    Search for a word with one of two patterns:
+                                    <input id="reSearchOr" class="search-bar" type="text" placeholder="bat, bak">
+                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch(document.getElementById('reSearchOr').value.split(',')[0]);addToSearch('|');addToSearch(document.getElementById('reSearchOr').value.split(',')[1].replaceAll(' ',''));dictSort()">Search</button>
                                 </li>
                                 <li>
-                                    Search for a word with string repeated a specific number of times:
+                                    <p>Search for a word with a pattern repeated a specific number of times:</p>
                                     <input id="reSearchRepn" class="search-bar" type="text" placeholder="iCi, 2">
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch('(');addToSearch(document.getElementById('reSearchRepn').value.split(',')[0]);addToSearch('){');addToSearch(document.getElementById('reSearchRepn').value.split(',')[1].replace(' ',''));addToSearch('}');dictSort()">Search</button>
                                 </li>
