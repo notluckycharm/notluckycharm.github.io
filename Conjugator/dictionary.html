@@ -19,8 +19,8 @@
                     <div class="row" style="padding-top:25px">
                         <div class="left aligned column" style="display: flex; border:0px; flex-direction: row;">
                             <div style="width: auto"><img src="static/Alabama-Coushata.png"></div>
-                            <div style="display: flex; flex-direction: column; width: 100%; position: relative;">
-                                <div class="four-col" style="padding-left: 1rem; font-weight:500; font-size:28px; display: flex; align-items: center; position: absolute; top:70px">
+                            <div style="width: 100%; margin-top: auto; margin-bottom: auto">
+                                <div class="four-col" style="padding-left: 1rem; font-weight:500; font-size:28px; display: flex; align-items: center;">
                                     <span>Alabama to English Dictionary Online</span>
                                 </div>
                                 <!-- <div style="margin-top:5px; height:fit-content; position:absolute; bottom:0px; left:1em">
@@ -33,14 +33,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="ui" style="position:relative">
-                    <div class="row">
+                <div class="ui">
+                    <div class="row" style="position: relative; margin-top:auto">
                         <div class="left aligned column">
                             <div class="center-container">
                                 <div class="huge" style="display: flex;">
                                     <input id="searchBar" class="search-bar" type="text" placeholder="Search for an Alabama or English word" oninput="dictSort()">
-                                    <i id="clear" class="icon" style="cursor: pointer" aria-hidden="true" onclick="clearInput(event)">&times;</i>
-                                    <id id="re" class="icon" style="cursor: pointer; border-radius: 10px" title="Use Regular Expressions" onclick="useRE()">[.*]</id>
+                                    <i id="clear" class="icon" style="cursor: pointer; margin-left: -45px" aria-hidden="true" onclick="clearInput(event)">&times;</i>
+                                    <i id="re" class="icon" style="cursor: pointer; border-radius: 10px" title="Use Regular Expressions" onclick="useRE()">[.*]</i>
                                 </div>
                                 <div style="margin-top: 3px;">
                                     <div class="button-row">
@@ -73,6 +73,27 @@
                                 </p>
                             </div>
                         </div>
+                        <div id="rePreset" class="rePreset">
+                            <i id="reClose" class="icon" style="cursor: pointer" aria-hidden="true" onclick="reClose('rePreset')">&times;</i>
+                            <span class="subtitle">Preset Regular Expression Options</span>
+                            <ol>
+                                <li>
+                                    Search for an Alabama Word ending in:
+                                    <input id="reSearchEnd" class="search-bar" type="text" placeholder="lichi">
+                                    <button style="cursor: pointer" onclick="clearAndAdd(event, 'reSearchEnd');addToSearch('$');dictSort()">Search</button>
+                                </li>
+                                <li>
+                                    Search for an Alabama Word beginning in:
+                                    <input id="reSearchBeg" class="search-bar" type="text" placeholder="i">
+                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch('^');addToSearch(document.getElementById('reSearchBeg').value);dictSort()">Search</button>
+                                </li>
+                                <li>
+                                    Search for a specific syllable structure:
+                                    <input id="reSearchSyll" class="search-bar" type="text" placeholder="CVCCV">
+                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch('^');addToSearch(document.getElementById('reSearchSyll').value);addToSearch('$');dictSort()">Search</button>
+                                </li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,21 +102,35 @@
             var mode = "default";
             var shown = 0;
             var shownMax = 50;
+            function clearAndAdd(event, id) {
+                clearInput(event);
+                var input = document.getElementById(id).value;
+                addToSearch(input);
+            }
             function useRE() {
                 if (mode == "default") {
                     mode = "re";
                     document.getElementById('re').setAttribute('style', 'cursor: pointer; border-radius: 10px; background: blue')
+                    reOpen("rePreset");
                 }
                 else {
                     mode = "default"
                     document.getElementById('re').setAttribute('style', 'cursor: pointer; border-radius: 10px; background: #fff')
+                    reClose("rePreset")
                 }
 
+            }
+            function reClose(id) {
+                document.getElementById(id).setAttribute('style', 'display: None')
+            }
+            function reOpen(id) {
+                document.getElementById(id).setAttribute('style', 'display: block')
             }
             function clearInput(event) {
                 event.preventDefault();
                 document.getElementById('searchBar').value = "";
                 document.getElementById('searchWords').innerHTML = "";
+                shown = 0;
             }
             function addToSearch(char) {
                 document.getElementById('searchBar').value = document.getElementById('searchBar').value + char;
