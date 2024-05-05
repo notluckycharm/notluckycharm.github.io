@@ -14,7 +14,7 @@ select.custom-select {
     text-align: center;
   }
 
-.top-bar {
+div.top-bar {
     display: flex;
     align-items: center;
     height: 45px;
