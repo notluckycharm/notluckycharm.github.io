@@ -77,32 +77,32 @@
                             <i id="reClose" class="icon" style="cursor: pointer" aria-hidden="true" onclick="reClose('rePreset')">&times;</i>
                             <span class="subtitle">Preset Regular Expression Options</span>
                             <ol>
-                                <li>
+                                <li class="re">
                                     Search for an Alabama Word ending in:
                                     <input id="reSearchEnd" class="search-bar" type="text" placeholder="lichi">
                                     <button style="cursor: pointer" onclick="clearAndAdd(event, 'reSearchEnd');addToSearch('$');dictSort()">Search</button>
                                 </li>
-                                <li>
+                                <li class="re">
                                     Search for an Alabama Word beginning in:
                                     <input id="reSearchBeg" class="search-bar" type="text" placeholder="i">
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch('^');addToSearch(document.getElementById('reSearchBeg').value);dictSort()">Search</button>
                                 </li>
-                                <li>
+                                <li class="re">
                                     Search for a specific syllable patterns:
                                     <input id="reSearchSyll" class="search-bar" type="text" placeholder="CVCka">
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch('^');addToSearch(document.getElementById('reSearchSyll').value);addToSearch('$');dictSort()">Search</button>
                                 </li>
-                                <li>
-                                    Search for a word of a specific length:
+                                <li class="re">
+                                    <p>Search for an Alabama word of a specific length:</p>
                                     <input id="reSearchSet" class="search-bar" type="text" placeholder="6">
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch('.{');addToSearch(document.getElementById('reSearchSet').value);addToSearch('}');dictSort()">Search</button>
                                 </li>
-                                <li>
-                                    Search for a word with either one of two patterns:
+                                <li class="re">
+                                    <p>Search for an Alabama word with either one of two patterns:</p>
                                     <input id="reSearchOr" class="search-bar" type="text" placeholder="bat, bak">
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch(document.getElementById('reSearchOr').value.split(',')[0]);addToSearch('|');addToSearch(document.getElementById('reSearchOr').value.split(',')[1].replaceAll(' ',''));dictSort()">Search</button>
                                 </li>
-                                <li>
+                                <li class="re">
                                     <p>Search for a word with a pattern repeated a specific number of times:</p>
                                     <input id="reSearchRepn" class="search-bar" type="text" placeholder="iCi, 2">
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch('(');addToSearch(document.getElementById('reSearchRepn').value.split(',')[0]);addToSearch('){');addToSearch(document.getElementById('reSearchRepn').value.split(',')[1].replace(' ',''));addToSearch('}');dictSort()">Search</button>
