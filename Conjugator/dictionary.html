@@ -98,7 +98,7 @@
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch('.{');addToSearch(document.getElementById('reSearchSet').value);addToSearch('}');dictSort()">Search</button>
                                 </li>
                                 <li>
-                                    Search for a word with one of two patterns:
+                                    Search for a word with either one of two patterns:
                                     <input id="reSearchOr" class="search-bar" type="text" placeholder="bat, bak">
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch(document.getElementById('reSearchOr').value.split(',')[0]);addToSearch('|');addToSearch(document.getElementById('reSearchOr').value.split(',')[1].replaceAll(' ',''));dictSort()">Search</button>
                                 </li>
@@ -226,7 +226,14 @@
                         for (var el in slice) {
                             divs += `<div class="left aligned center-container">
                                     <div class="word">
-                                        <span>` + slice[el].lemma + `</span>
+                                        <a style="color:black" href="`
+                            if (slice[el].definition.length >= 3 && slice[el].definition.slice(0,3) == 'to '){
+                                divs += `verbentry`
+                            } 
+                            else {
+                                divs += `nounentry`
+                            }
+                            divs += `.html?stem=` + slice[el].lemma + `">` + slice[el].lemma + `</a>
                                     </div>
                                     <div class="definition">
                                         <span>` + slice[el].definition

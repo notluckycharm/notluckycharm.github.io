@@ -76,6 +76,10 @@ select.custom-select {
     font-size: 100%;
 }
 
+
+
+
+
 /* Buttons */
 button {
     background: #fff;
@@ -95,7 +99,7 @@ button {
 button.char {
     padding: 10px 14px;
     border-radius: 0rem;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .ui-divider {
@@ -107,17 +111,14 @@ div.word {
     font-size: 18px;
     padding-bottom:5px;
     font-weight: 450;
+    margin-left: 5px;
 }
 
 div.definition {
     padding-top:5px;
+    margin-left: 5px;
 }
 
-div.principalPart {
-    padding-top: 5px;
-    margin-bottom:5px;
-    margin-left:30px;
-}
 .icon {
     cursor: pointer;
     line-height: 2.5;
@@ -138,13 +139,33 @@ div.principalPart {
     text-decoration: inherit;
 }
 
-div.footer {
-    font-size: 14px;
+span.top-bar {
+    color: #777;
+    margin-left: 12px;
+    font-style: italic;
 }
 
-a:visited {
-    text-decoration: none;
-    color: blue;
+li {
+    font-size: 20px;
+    margin:10px
+}
+
+span.description {
+    color: #777;
+    font-style: italic;
+    text-align: right;
+}
+
+span.tabular {
+    font-size:18px;
+    padding:5px;
+}
+
+div.principalPart {
+    padding-top:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:30px;
 }
 
 div.rePreset {
@@ -156,4 +177,8 @@ div.rePreset {
 
 span.subtitle {
     font-weight: 450;
+}
+
+li.re {
+    font-size: 14px;
 }

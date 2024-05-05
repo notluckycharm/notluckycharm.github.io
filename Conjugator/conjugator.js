@@ -1,46 +1,60 @@
 var consonants = ['b', 'c', 'd', 'f', 'h', 
                         'k', 'l', 'ɬ', 'm', 'n',
                         'p', 's', 't', 'w', 'y']
-    var vowels = ['a', 'e', 'i', 'o']
+    var vowels = ['a', 'e', 'i', 'o', 'á', 'à', 'ó', 'ò', 'í', 'ì', 'é', 'è']
     function syllabify(string) {
+        if (string.length <= 3) {return [string]}
+        string = string.replace('ch','c');
         var sylls = [];
         var curr_syll = "";
         var len = string.length
         for (var i = 0; i < len; i++) {
             if (consonants.includes(string[i])) {
                 if (curr_syll == "") {curr_syll = string[i]; }
-                else if (i == len - 1) {curr_syll = curr_syll.concat(string[i]); sylls = sylls.concat(curr_syll); }
+                else if (i == len - 1) {curr_syll = curr_syll.concat(string[i]); }
                 else if (vowels.includes(string[i + 1])){ sylls = sylls.concat(curr_syll); curr_syll = string[i]; }
                 else if (consonants.includes(string[i + 1 ])) { curr_syll = curr_syll.concat(string[i]); sylls = sylls.concat(curr_syll); curr_syll = ""}
             }
-            if (vowels.includes(string[i])) {
+            else if (vowels.includes(string[i])) {
                 curr_syll = curr_syll.concat(string[i]);
             }
         }
         sylls = sylls.concat(curr_syll);
-        return sylls;
+        return sylls.map((el) => el.replace('c','ch'));
+    }
+    function isCV(syll) {
+        syll = syll.replace('ch','c')
+        if (syll.length == 2 && consonants.includes(syll[0]) && vowels.includes(syll[1])) {
+            return true;
+        }
+        return false
+    }
+    function isCVV(syll) {
+        syll = syll.replace('ch','c')
+        if (syll.length == 3 && consonants.includes(syll[0]) && vowels.includes(syll[1]) && vowels.includes(syll[2])) {
+            return true;
+        }
+        if (syll.length == 2 && vowels.includes(syll[0]) && vowels.includes(syll[1])) {
+            return true;
+        }
+        return false;
     }
     function coallesce(string) {
-        var prev = ""
+        var prev = 0
         for (var i = 0; i < string.length; i++) {
-          if (vowels.includes(string[i]) && prev !== "") {
-            string = string.slice(0,prev) + string.slice(prev + 1);
-            prev = "";
-          }
-          else if (vowels.includes(string[i]) && prev === "") {
-            prev = i;
-          }
-          else if (consonants.includes(string[i])) {
-            prev = "";
-          }
+            if (vowels.includes(string[i]) && vowels.includes(string[prev]) && string[i] !== string[prev]) {
+                string = string.slice(0,prev) + string.slice(prev + 1);
+            }
+            prev = i
         }
         return string
     }
     function isAlabamaFrame(string) {
-        var syllables = syllabify(string);
+        var syllables = syllabify(string).map((el) => el.replace('ch','c'));
         if (syllables.length < 2) { return false; }
         var reversed = syllables.reverse();
         if (reversed[0].length == 2 && reversed[1].length == 3) { return true; }
+        else if (reversed[0].length == 2 && reversed[1].length == 2 && vowels.includes(reversed[1][0])) { return true; }
         else { return false; }
     }
     function conjugate(string, person, plurality) {
@@ -192,6 +206,35 @@ function patientConjugate(string, person, plurality) {
 
 function negateConjugate(string, person, plurality) {
     var syllables = syllabify(string).reverse();
+    if (syllables.length >= 2 && syllables[0] == 'chi' && syllables[1] == 'li') {
+        var inflStem = negateConjugate(syllables.slice(1).reverse().join(''), person, plurality);
+        if (inflStem.slice(-3,-1) == 'kk') {
+            inflStem = inflStem.slice(0,-1)
+        }
+        return inflStem.slice(0,inflStem.length - 1) + 'ìicho'
+    }
+    else if (syllables[0] == 'chi' && isCV(syllables[1])) {
+        string = string + 't';
+        switch(person) {
+            case 1:
+                if (plurality == 0) {
+                    return string += 'ákko'
+                }
+                else {
+                    return string += 'kílko'
+                }
+            case 2:
+                if (plurality == 0) {
+                    return string += 'chíkko'
+                }
+                else {
+                    return string += 'hachíkko'
+                }
+            case 3:
+                return string += 'ko'
+        }
+    }
+    // CV
     if (syllables.length === 1 || (syllables.length === 2 && syllables[1].length === 1)) {
         string = string.slice(1)
         if (person === 1 && plurality === 0) {
@@ -204,7 +247,7 @@ function negateConjugate(string, person, plurality) {
             return 'ík' + coallesce(string + 'o')
         }
         else if (person === 1 && plurality === 1) {
-            return 'kíl' + coallesce(string + 'o')
+            return 'kìl' + coallesce(string + 'o')
         }
         else if (person === 2 && plurality === 1) {
             return 'hachík' + coallesce(string + 'o')
@@ -213,8 +256,114 @@ function negateConjugate(string, person, plurality) {
             return 'ohík' + coallesce(string + 'o')
         }
     }
-    else if (isAlabamaFrame(string) && syllables[0] == "") {
-        return string;
+    // CVVli CVCli CVCV
+    else if ((isAlabamaFrame(string) && syllables[0] == "li") || (syllables.length >= 2 && isCV(syllables[0]) && isCV(syllables[1]))) {
+        if (syllables[0] == 'li') {
+            string = syllables.slice(1).reverse().join('')
+        }
+        else {
+            string = string.slice(0,string.length - 1)
+        }
+        switch(person) {
+            case 1:
+                if (plurality == 0) {
+                    return string + 'tákko'
+                }
+                else {
+                    return string + 'kìlko'
+                }
+            case 2:
+                // if (syllables[0] == 'chi') {
+                //     return negateConjugate(syllables.slice(1).reverse().join(''),person, plurality) + 'cho'
+                // }
+                if (plurality == 0) {
+                    return string + 'chíkko'
+                }
+                else {
+                    return string + 'hachíkko'
+                }
+            case 3:
+                var syl = syllabify(string);
+                syl[syl.length - 1] = syl[syl.length - 1].replace('a','á')
+                                                       .replace('o','ó')
+                                                       .replace('i','í');
+                string = syl.join('')
+                return string + 'ko'
+            default:
+                return string;
+        }
+    }
+    // kV
+    else if (syllables[0][0] =='k') {
+        switch (person) {
+            case 1:
+                if (plurality == 0) {
+                    if (vowels.includes(syllables[1][syllables[1].length - 1])) {
+                        return coallesce(syllables.slice(1).reverse().join('') + 'ákko')
+                    }
+                    else {
+                        return syllables.slice(1).reverse().join('') + 'hákko'
+                    }
+                }
+                else {
+                    return syllables.slice(1).reverse().join('') + 'kìlko'
+                }
+            case 2:
+                if (plurality == 0) {
+                    return syllables.slice(1).reverse().join('') + 'chíkko'
+                }
+                else {
+                    return syllables.slice(1).reverse().join('') + 'hachíkko'
+                }
+            case 3:
+                if (vowels.includes(syllables[1][syllables[1].length - 1])) {
+                    return coallesce(syllables.slice(1).reverse().join('') + 'íkko')
+                }
+                else {
+                    return syllables.slice(1).reverse().join('') + 'híkko'
+                }
+            default:
+                return string;
+        }
+    }
+    // CVVCV and CVCCV
+    else if (isAlabamaFrame(string)) {
+        var infixes = ['kà', 'likì', 'chikì', 'hachikì', 'kì'];
+        var syllLen = syllables[1].length - 1
+            syllables[1] = syllables[1].replace('à', 'a').replace('á','a')
+                                        .replace('ó', 'o').replace('ò', 'o')
+                                        .replace('í', 'i').replace('ì', 'i');
+        if (isCVV(syllables[1])) {
+            for (var i in infixes) {
+                infixes[i] = infixes[i] + infixes[i][infixes[i].length - 1];
+            }
+        }
+        var sec2Last = syllables[1];
+            switch(person) {
+                case 1:
+                    if (plurality == 0) {
+                        syllables[1] = syllables[1].slice(0,syllLen) + infixes[0] + syllables[1][syllLen];
+                    }
+                    else {
+                        syllables[1] = syllables[1].slice(0,syllLen) + infixes[1] + syllables[1][syllLen]
+                    }
+                    break;
+                case 2:
+                    if (plurality == 0) {
+                        syllables[1] = syllables[1].slice(0,syllLen) + infixes[2] + syllables[1][syllLen]
+                    }
+                    else {
+                        syllables[1] = syllables[1].slice(0,syllLen) + infixes[3] + syllables[1][syllLen]
+                    }
+                    break;
+                case 3:
+                    syllables[1] = syllables[1].slice(0,syllLen) + infixes[4] + syllables[1][syllLen]
+            }
+            if (isCVV(sec2Last)) {
+                syllables[1] = syllables[1].slice(0,syllables[1].length - 1)
+            }
+            console.log(syllables);
+            return coallesce(syllables.reverse().join('') + 'o');
     }
     else {return string;}
 }
