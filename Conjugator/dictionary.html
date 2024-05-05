@@ -127,7 +127,12 @@
             }
             function dictSort() {
                 var divs = "";
-                var string = removeAccents(document.getElementById('searchBar').value.toLowerCase());
+                if (mode == 'default') {
+                    var string = removeAccents(document.getElementById('searchBar').value.toLowerCase());
+                }
+                else {
+                    var string = document.getElementById('searchBar').value;
+                }
                 function stateMachineSort(a, b) {
                     var aShare = initialShare(string, removeAccents(a.lemma.toLowerCase()))['lem'];
                     var bShare = initialShare(string, removeAccents(b.lemma.toLowerCase()))['lem'];
@@ -142,7 +147,8 @@
                     }
                 }
                 function reMatch(re, string) {
-                    re.replace('C', 'bcdfhklɬmnpstwy')
+                    re = re.replaceAll('C', '[bcdfhklɬmnpstwy]')
+                            .replaceAll('V', '[aeoiáóéíàòìè]')
                     var regEx = new RegExp(re);
                     return regEx.test(string);
                 }
@@ -162,7 +168,7 @@
                         }
                         else {
                             obj = obj.filter((a) =>
-                                reMatch(string, a.lemma) || reMatch(string.toLowerCase()))
+                                reMatch(string, a.lemma))
                         }
                         obj = obj.sort(stateMachineSort);
                         var slice = obj.slice(shown, shown + 50);
