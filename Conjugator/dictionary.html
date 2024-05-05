@@ -93,14 +93,19 @@
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch('^');addToSearch(document.getElementById('reSearchSyll').value);addToSearch('$');dictSort()">Search</button>
                                 </li>
                                 <li>
-                                    Search for a word containing any member of a specific set:
-                                    <input id="reSearchSet" class="search-bar" type="text" placeholder="áóí">
-                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch('[');addToSearch(document.getElementById('reSearchSet').value);addToSearch(']');dictSort()">Search</button>
+                                    Search for a word of a specific length:
+                                    <input id="reSearchSet" class="search-bar" type="text" placeholder="6">
+                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch('.{');addToSearch(document.getElementById('reSearchSet').value);addToSearch('}');dictSort()">Search</button>
                                 </li>
                                 <li>
                                     Search for a word with one or more instances of a string in a row:
                                     <input id="reSearchRep" class="search-bar" type="text" placeholder="li">
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch('(');addToSearch(document.getElementById('reSearchRep').value);addToSearch(')+');dictSort()">Search</button>
+                                </li>
+                                <li>
+                                    Search for a word with string repeated a specific number of times:
+                                    <input id="reSearchRepn" class="search-bar" type="text" placeholder="iCi, 2">
+                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch('(');addToSearch(document.getElementById('reSearchRepn').value.split(',')[0]);addToSearch('){');addToSearch(document.getElementById('reSearchRepn').value.split(',')[1].replace(' ',''));addToSearch('}');dictSort()">Search</button>
                                 </li>
                             </ol>
                             <em>for more regular expression rules, see <a href="https://en.wikipedia.org/wiki/Regular_expression">here</a></em>
