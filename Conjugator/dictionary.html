@@ -40,6 +40,7 @@
                                 <div class="huge" style="display: flex;">
                                     <input id="searchBar" class="search-bar" type="text" placeholder="Search for an Alabama or English word" oninput="dictSort()">
                                     <i id="clear" class="icon" style="cursor: pointer" aria-hidden="true" onclick="clearInput(event)">&times;</i>
+                                    <id id="re" class="icon" style="cursor: pointer; border-radius: 10px" title="Use Regular Expressions" onclick="useRE()">[.*]</id>
                                 </div>
                                 <div style="margin-top: 3px;">
                                     <div class="button-row">
@@ -72,6 +73,18 @@
             </div>
         </main>
         <script>
+            var mode = "default";
+            function useRE() {
+                if (mode == "default") {
+                    mode = "re";
+                    document.getElementById('re').setAttribute('style', 'cursor: pointer; border-radius: 10px; background: blue')
+                }
+                else {
+                    mode = "default"
+                    document.getElementById('re').setAttribute('style', 'cursor: pointer; border-radius: 10px; background: #fff')
+                }
+
+            }
             function clearInput(event) {
                 event.preventDefault();
                 document.getElementById('searchBar').value = "";
@@ -121,6 +134,10 @@
                         }
                     }
                 }
+                function reMatch(re, string) {
+                    var regEx = new RegExp(re);
+                    return regEx.test(string);
+                }
                 fetch ("dict.json")
                      .then((res) => {
                         if (!res.ok) {
@@ -131,8 +148,15 @@
                      })
                      .then((data) =>{
                         var obj = data.words;
-                        obj = obj.filter((a) => 
-                            removeAccents(a.lemma.toLowerCase()).includes(string) || a.definition.toLowerCase().includes(string));
+                        if (mode == "default") {
+                            obj = obj.filter((a) => 
+                                removeAccents(a.lemma.toLowerCase()).includes(string) || a.definition.toLowerCase().includes(string));
+                        }
+                        else {
+                            console.log(string);
+                            obj = obj.filter((a) =>
+                                reMatch(string, a.lemma) || reMatch(string.toLowerCase()))
+                        }
                         obj = obj.sort(stateMachineSort);
                         for (var el in obj.slice(0,50)) {
                             divs += `<div class="left aligned center-container">
