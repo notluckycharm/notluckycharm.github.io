@@ -73,7 +73,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div id="rePreset" class="rePreset">
+                        <div id="rePreset" class="rePreset" style="display: none">
                             <i id="reClose" class="icon" style="cursor: pointer" aria-hidden="true" onclick="reClose('rePreset')">&times;</i>
                             <span class="subtitle">Preset Regular Expression Options</span>
                             <ol>
@@ -89,10 +89,21 @@
                                 </li>
                                 <li>
                                     Search for a specific syllable structure:
-                                    <input id="reSearchSyll" class="search-bar" type="text" placeholder="CVCCV">
+                                    <input id="reSearchSyll" class="search-bar" type="text" placeholder="CVCka">
                                     <button style="cursor: pointer" onclick="clearInput(event);addToSearch('^');addToSearch(document.getElementById('reSearchSyll').value);addToSearch('$');dictSort()">Search</button>
                                 </li>
+                                <li>
+                                    Search for a word containing any member of a specific set:
+                                    <input id="reSearchSet" class="search-bar" type="text" placeholder="áóí">
+                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch('[');addToSearch(document.getElementById('reSearchSet').value);addToSearch(']');dictSort()">Search</button>
+                                </li>
+                                <li>
+                                    Search for a word with one or more instances of a string in a row:
+                                    <input id="reSearchRep" class="search-bar" type="text" placeholder="li">
+                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch('(');addToSearch(document.getElementById('reSearchRep').value);addToSearch(')+');dictSort()">Search</button>
+                                </li>
                             </ol>
+                            <em>for more regular expression rules, see <a href="https://en.wikipedia.org/wiki/Regular_expression">here</a></em>
                         </div>
                     </div>
                 </div>
