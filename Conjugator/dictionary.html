@@ -60,7 +60,7 @@
                                 <span id="resultCount">0 - 0 Results Shown out of 0</span>
                                 <button style="cursor: pointer" onclick="updateResults(50)">></button>
                             </div>
-                            <div id="searchWords" class="left aligned center-container">
+                            <div id="searchWords" class="left aligned center-container" style="max-height: 50em; overflow: scroll;">
                             </div>
                             <div class="ui-divider"></div>
                             <div class="left aligned center-container footer">
@@ -234,8 +234,11 @@
                                 divs += `nounentry`
                             }
                             divs += `.html?stem=` + slice[el].lemma + `">` + slice[el].lemma + `</a>
-                                    </div>
-                                    <div class="definition">
+                                    </div>`
+                            if (slice[el].derivation !='nan') {
+                                divs += `<em>` + slice[el].derivation + `</em>`
+                            }
+                            divs += `<div class="definition">
                                         <span>` + slice[el].definition
                                             
                             if (slice[el].class != "nan") {

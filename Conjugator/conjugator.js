@@ -205,6 +205,22 @@ function patientConjugate(string, person, plurality) {
 }
 
 function negateConjugate(string, person, plurality) {
+    fetch("dict.json") 
+    .then((res) => {
+    if (!res.ok) {
+        throw new Error 
+            (`HTTP error! Status: $(res.status)`);
+    }
+    return res.json();
+    })
+    .then((data) =>{
+        var obj = data.words;
+        obj = obj.filter((el) => el.lemma == string);
+        console.log(obj);
+        var deriv = obj[0].derivation;
+        console.log(deriv);
+    })
+.catch((error) => console.error("Unable to fetch data:", error));
     var syllables = syllabify(string).reverse();
     if (syllables.length >= 2 && syllables[0] == 'chi' && syllables[1] == 'li') {
         var inflStem = negateConjugate(syllables.slice(1).reverse().join(''), person, plurality);
