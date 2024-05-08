@@ -204,7 +204,10 @@ function patientConjugate(string, person, plurality) {
     }
 }
 
-function negateConjugate(string, person, plurality) {
+function handleMixedMorphemes(string, person, plurality) {
+    var syllablesRev = syllabify(string).reverse();
+    var syllables = syllablesRev.reverse()
+    deriv = "";
     fetch("dict.json") 
     .then((res) => {
     if (!res.ok) {
@@ -215,12 +218,19 @@ function negateConjugate(string, person, plurality) {
     })
     .then((data) =>{
         var obj = data.words;
-        obj = obj.filter((el) => el.lemma == string);
-        console.log(obj);
+        obj = obj.filter((el) => { return (el.lemma == string)});
         var deriv = obj[0].derivation;
-        console.log(deriv);
+        if (deriv !== "") {
+            const regex = new RegExp("\[[a-z, áóíìòà]+-.*\/[\(]*i[\)]*[a-z, áóíìòà]{2}\]");
+            if (regex.test(deriv)) {
+                return coallesce(syllables.slice(1).reverse().join('') + negateConjugate('i' + syllables[0], person, plurality));
+            };
+        }
+        else { return ""; }
     })
-.catch((error) => console.error("Unable to fetch data:", error));
+    .catch((error) => console.error("Unable to fetch data:", error));
+}
+function negateConjugate(string, person, plurality) {
     var syllables = syllabify(string).reverse();
     if (syllables.length >= 2 && syllables[0] == 'chi' && syllables[1] == 'li') {
         var inflStem = negateConjugate(syllables.slice(1).reverse().join(''), person, plurality);
@@ -274,6 +284,7 @@ function negateConjugate(string, person, plurality) {
     }
     // CVVli CVCli CVCV
     else if ((isAlabamaFrame(string) && syllables[0] == "li") || (syllables.length >= 2 && isCV(syllables[0]) && isCV(syllables[1]))) {
+        // var out = (handleMixedMorphemes((string), person, plurality));
         if (syllables[0] == 'li') {
             string = syllables.slice(1).reverse().join('')
         }

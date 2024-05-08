@@ -95,7 +95,7 @@
                                 <li class="re">
                                     <p>Search for an Alabama word of a specific length:</p>
                                     <input id="reSearchSet" class="search-bar" type="text" placeholder="6">
-                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch('.{');addToSearch(document.getElementById('reSearchSet').value);addToSearch('}');dictSort()">Search</button>
+                                    <button style="cursor: pointer" onclick="clearInput(event);addToSearch('^.{');addToSearch(document.getElementById('reSearchSet').value);addToSearch('}$');dictSort()">Search</button>
                                 </li>
                                 <li class="re">
                                     <p>Search for an Alabama word with either one of two patterns:</p>
