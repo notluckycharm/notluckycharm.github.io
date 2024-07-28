@@ -124,3 +124,14 @@ a {
 img {
     width: 100%
 }
+
+table {
+    width: 20%;
+    color: red;
+}
+
+.golf-input {
+    padding: 5px 10px;
+    width: 15%;
+    margin-bottom: 10px;
+}

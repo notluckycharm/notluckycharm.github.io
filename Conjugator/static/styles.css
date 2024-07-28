@@ -182,3 +182,7 @@ span.subtitle {
 li.re {
     font-size: 14px;
 }
+
+th {
+    width:200%;
+}
