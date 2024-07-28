@@ -126,8 +126,10 @@ img {
 }
 
 table {
-    width: 20%;
+    width: 72%;
     color: red;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .golf-input {
