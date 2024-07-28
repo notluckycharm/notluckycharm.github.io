@@ -24,9 +24,6 @@ function calculateSkins(wonSkins, indSums, names, winners) {
 }
 function calculateDots(dotsCounts, indSums, names, winners) {
     var dotsSum = dotsCounts.reduce((a,b) => a + b);
-    console.log(dotsCounts);
-    console.log(dotsCounts.reduce((a,b) => a + b));
-    console.log(dotsSum);
     var dotsVals = [];
     for (var i = 0; i < indSums.length; i++) {
         console.log(( dotsCounts[i] * names.length ) - dotsSum);

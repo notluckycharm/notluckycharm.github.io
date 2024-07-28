@@ -23,11 +23,11 @@
                 <div class="left aligned column">
                     <section id="Description" style="justify-content: center;">
                         <div style="display: flex; justify-content: center; margin-bottom: 15px;">
-                            <p style="margin-right: 15px">How many Players?</p><input onchange="updateInputs(event)" type="number" id="numOfPlayers" placeholder="2" min="2" max="6" required>
+                            <p style="margin-right: 15px">How many Players?</p><input onchange="updateInputs(event)" type="number" id="numOfPlayers" min="2" max="6" required>
                         </div> 
                         <div style="display: flex; justify-content: center; margin-bottom: 15px;">
-                            <p style="margin-right: 15px">What team won?</p><input type="number" id="winners" placeholder="1" min="1" max="3" required>
-                            <p style="margin-right: 15px">What's the Team Prize?</p><input type="number" id="teamPrize" placeholder="1" min="0" required>
+                            <p style="margin-right: 15px">What team won?</p><input type="number" id="winners" min="1" max="3" required>
+                            <p style="margin-right: 15px">What's the Team Prize?</p><input type="number" id="teamPrize" min="0" required>
                         </div> 
                         <div id="textForm" style="display: none;">
                         </div>
@@ -56,10 +56,10 @@
                         </table>`;
         for (var i = 0; i < playerNo; i++) {
             form += `<div style="display: flex;justify-content: center;">
-                <input type="text" class="golf-input" id="player` + (i + 1) + `Name" placeholder="Player `+ (i + 1) + ` Name" required>
-                <input type="number" class="golf-input" id="player` + (i + 1) + `Team" placeholder="1" required>
-                <input type="number" class="golf-input" id="player` + (i + 1) + `Skins" placeholder="1" required>
-                <input type="number" class="golf-input" id="player` + (i + 1) + `Dots" placeholder="1" required>
+                <input type="text" class="golf-input" id="player` + (i + 1) + `Name" required>
+                <input type="number" class="golf-input" id="player` + (i + 1) + `Team"  required>
+                <input type="number" class="golf-input" id="player` + (i + 1) + `Skins" required>
+                <input type="number" class="golf-input" id="player` + (i + 1) + `Dots" required>
             </div>`;
         }
         form += `<div>
