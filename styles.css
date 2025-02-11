@@ -155,7 +155,10 @@ a, a:visited, a:hover, a:active {
   .img {
     border-radius: 50%;
     max-width: 25%;
-    padding:15px
+    padding:15px;
+    height: auto;
+    flex-shrink: 1;
+    align-self: flex-start
   }
 
   .vertical-centered {
