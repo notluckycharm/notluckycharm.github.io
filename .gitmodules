@@ -1,0 +1,3 @@
+[submodule "alabama-corpus"]
+	path = alabama-corpus
+	url = https://github.com/notluckycharm/alabama-corpus
