@@ -173,3 +173,7 @@ a, a:visited, a:hover, a:active {
   .right-spaced {
     margin-right: 10px
   }
+
+a.large {
+    font-size: 22px;
+}
