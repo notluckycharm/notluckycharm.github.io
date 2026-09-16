@@ -177,3 +177,19 @@ a, a:visited, a:hover, a:active {
 a.large {
     font-size: 22px;
 }
+.visible {
+    display:none;
+}
+
+.bg-black {
+    background: #000;
+    color:white;
+}
+.padded {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rounded {
+    border-radius: 10px;
+}
