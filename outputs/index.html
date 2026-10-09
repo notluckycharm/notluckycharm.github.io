@@ -12,6 +12,7 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="/styles.css">
                 <script src="https://cdn.tailwindcss.com"></script>
+                <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
             </head>
             <body>
         <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-default">
@@ -38,7 +39,7 @@
               </div>
             </div>
           </nav>
-        <div class="mt-16">
+        <div class="mt-20">
             <div class="flex justify-center">
             <div class="max-w-5xl " id="publications-button">
                 <div class="blob">
@@ -47,11 +48,13 @@
                         <h2 class="text-3xl font-bold my-4">Publications</h2>
                         <h3 class="text-2xl my-4">2026</h3>
                         <ul class="px-12">
-                            <li class="large-text-grey"><a href="static/TA-2026-interpreting-clausal-movement.pdf">[link]</a> Tatiana Bondarenko, Jacob Fernandes, Kaden Holladay, and Richard Luo. 2026. Interpreting Clausal Movement. In <i>A Festschrift for Danny Fox</i></li>
-                            <button onclick="document.getElementById('interpreting-clausal-movement').classList.toggle('visible')">Cite me</button>
-                            <div class="padded bg-black rounded" id="interpreting-clausal-movement" class="visible">
-<pre>
-                                <code data-lang="bibtex">
+                            <div class="flex flex-row my-4">
+                                <button class="px-8 py-2 bg-blue-600 mx-4 text-white rounded-2xl" onclick="document.getElementById('interpreting-clausal-movement').classList.toggle('visible')">Bib</button>
+                                <li class="large-text-grey"><a href="/static/TA-2026-interpreting-clausal-movement.pdf"><span class="text-sky-600">[link]</span></a> Tatiana Bondarenko, Jacob Fernandes, Kaden Holladay, and Richard Luo. 2026. Interpreting Clausal Movement. In <i>A Festschrift for Danny Fox</i></li>
+                            </div> 
+                            <div class="bg-black rounded-xl px-4 visible" id="interpreting-clausal-movement">
+<pre class="max-w-sm sm:max-w-md md:max-w-5xl overflow-x-scroll">
+                                <code class="overflow-x-scroll" data-lang="bibtex">
 @incollection{bondarenko-et-al-2026,
     title = {Interpreting {C}lausal {M}ovement},
     author = {Bondarenko, Tatiana and Fernandes, Jacob and Holladay, Kaden and Luo, Richard},
@@ -66,27 +69,29 @@
                         <h2 class="text-3xl font-bold my-4">Manuscripts</h2>
                         <h3 class="text-2xl my-4">2024</h3>
                         <ul class="px-12">
-                            <li class="large-text-grey"><a href="static/SeniorThesis-23.pdf">[link]</a> Fernandes, Jacob. 2024. Applications of Machine Learning for Predicting Sound Symbolism in Japanese and Korean Ideophones. Cambridge: Harvard Unviersity. <a href="https://osf.io/py43z/?view_only=b6d0eee440184c91bfb53b8ec8dcda94">[Dataset]</a></li>
-                            <li class="large-text-grey"><a href="https://drive.google.com/file/d/1zxzVBb5DEw6blUqCRg72TQoDuIqjln3b/view?usp=sharing">[link]</a> Fernandes, Jacob. 2024. Size matters in Georgian, too.</li>
-                            <li class="large-text-grey"><a href="https://drive.google.com/file/d/1-Cg7MlQOt5YJshSOnhqa9PM14VXUhw5k/view?usp=sharing">[link]</a> Fernandes, Jacob & Silva, Ava. 2024. Alabama Type I agent morpheme agreement: A Stratal OT account.</li>
+                            <li class="large-text-grey"><a href="static/SeniorThesis-23.pdf"><span class="text-sky-600">[link]</span></a> Fernandes, Jacob. 2024. Applications of Machine Learning for Predicting Sound Symbolism in Japanese and Korean Ideophones. Cambridge: Harvard Unviersity. <a href="https://osf.io/py43z/?view_only=b6d0eee440184c91bfb53b8ec8dcda94">[Dataset]</a></li>
+                            <li class="large-text-grey"><a href="https://drive.google.com/file/d/1zxzVBb5DEw6blUqCRg72TQoDuIqjln3b/view?usp=sharing"><span class="text-sky-600">[link]</span></a> Fernandes, Jacob. 2024. Size matters in Georgian, too.</li>
+                            <li class="large-text-grey"><a href="https://drive.google.com/file/d/1-Cg7MlQOt5YJshSOnhqa9PM14VXUhw5k/view?usp=sharing"><span class="text-sky-600">[link]</span></a> Fernandes, Jacob & Silva, Ava. 2024. Alabama Type I agent morpheme agreement: A Stratal OT account.</li>
                         </ul>
                     </div>
                     <div class="border-t border-gray-200 my-4 py-4" id="presentations">
                         <h2 class="text-3xl font-bold my-4">Presentations</h2>
                         <h3 class="text-2xl my-4">2026</h3>
                         <ul class="px-12">
-                            <li class="large-text-grey"><a href="static/SSILA-FINAL.pdf">[slides]</a> (with Ava Silva) The allomorphs are not what they seem: a Stratal OT account of Alabama Agent Agreement. Talk presented at the Annual Meeting of the Society for the Study of Indigenous Languages of the Americas (SSILA), 2026.</li>
+                            <li class="large-text-grey"><a href="static/SSILA-FINAL.pdf"><span class="text-sky-600">[slides]</span></a> (with Ava Silva) The allomorphs are not what they seem: a Stratal OT account of Alabama Agent Agreement. Talk presented at the Annual Meeting of the Society for the Study of Indigenous Languages of the Americas (SSILA), 2026.</li>
                         </ul>
-                        <h3 class="text-2xl my-4">2026</h3>
+                        <h3 class="text-2xl my-4">2025</h3>
                         <ul class="px-12">
-                        <li class="large-text-grey"><a href="static/toobigtofail.pdf">[Poster]</a>“Too big to fail: Selective Opacity Effects in Three Types of Georgian Relative Clauses.” Poster presented at the <i>Annual Meeting of the South Caucasian Chalk Circle (SCCC), 2025</i></li>
-                            <li class="large-text-grey"><a href="https://drive.google.com/file/d/1mBIqDx0S6N4WO301wa1Gw7yN3OVPao7j/view?usp=sharing">[slides]</a> (With Tanya Bondarenko) Sentence mood in the tense system of the
-                                Alabama language <i>Annual Meeting of the Society for the Study of Indigenous Languages of the Americas (SSILA), 2025</i></li>
-                                </ul>
+                        <li class="large-text-grey py-4"><a href="static/toobigtofail.pdf"><span class="text-sky-600">[Poster]</span></a> “Too big to fail: Selective Opacity Effects in Three Types of Georgian Relative Clauses.” Poster presented at the <i>Annual Meeting of the South Caucasian Chalk Circle (SCCC), 2025</i></li>
+                        <li class="large-text-grey py-4"><a href="https://drive.google.com/file/d/1mBIqDx0S6N4WO301wa1Gw7yN3OVPao7j/view?usp=sharing"><span class="text-sky-600">[slides]</span></a> (With Tanya Bondarenko) Sentence mood in the tense system of the
+                                Alabama language <i>Annual Meeting of the Society for the Study of Indigenous Languages of the Americas (SSILA), 2025</i>
+                        </li>
+                        </ul>
                         </div>
             </div>
             </div>
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 </html>
