@@ -6,18 +6,35 @@
     <meta name="google-site-verification" content="wbqb_lbb6yeGujIlj0ZP55UHSgF2I3E7ECP23VbF60I" />
     <title>Jacob Fernandes</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav style="padding:25px">
-        <ul>
-            <li class="large"><a href="#">Jacob Fernandes</a></li>
-            <li class="large"><a href="/projects">Projects</a></li>
-            <li class="large"><a href="/cv">CV</a></li>
-        </ul>
-    </nav>
-
-    <main>
+    <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-default">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+              <li>
+                <a href="#" class="block py-2 px-3 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Jacob Fernandes</a>
+              </li>
+              <li>
+                <a href="/projects" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Projects & Research</a>
+              </li>
+              <li>
+                <a href="/outputs" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Outputs</a>
+              </li>
+              <li>
+                <a href="/cv" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">CV</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main class="mt-16">
         <div class="page">
             <div id="headshot" style="display: flex; margin-bottom: 10px">
                 <img class="img" src="static/headshot2.png">
@@ -28,57 +45,23 @@
                 </p>
                 </div>
             </div>
-            <section id="about">
+            <section class="border-top border-gray-100" id="about">
                 <div class="blob">
-                    <h2>About Me</h2>
-                    <p class="large-text-grey">I am a second year PhD student of Linguistics at NYU and recent graduate from Harvard University (c/o '24) where I received a Joint Bachelors of Arts in Linguistics and Computer Science (Highest Honors), along with a language citation in Modern Japanese. My theoretical research interests include agreement, A/Ā distinction, and locality.
-                    </p>
-                    <p class="large-text-grey">I am also passionate about language revitalization and documentation. I have linguistic fieldwork experience in languages from several language families:</p>
-                    <ul>
-                        <li>Alabama (<b>Muskogean</b>)</li>
-                        <li>Georgian (<b>Kartvelian</b>)</li>
-                        <li>Japanese</li>
-                        <li>Korean</li>
-                        <li>Oshiwambo (<b>Bantu</b>)</li>
-                    </ul>
+                    <h2 class="text-3xl font-bold text-navy-400">Hello!</h2>
+                    <div class="my-4 px-2 py-4">
+                        <p class="large-text-grey my-4">I'm Jacob, a second year PhD student of Linguistics at NYU and recent graduate from Harvard University (c/o '24) where I received a Joint Bachelors of Arts in Linguistics and Computer Science (Highest Honors), along with a language citation in Modern Japanese. My theoretical research interests include agreement, A/Ā distinction, and locality.
+                        </p>
+                        <p class="large-text-grey my-4">I am also passionate about language revitalization and documentation. I have linguistic fieldwork experience in languages from several language families:</p>
+                        <ul>
+                            <li>Alabama (<i>Muskogean</i>)</li>
+                            <li>Georgian (<i>Kartvelian</i>)</li>
+                            <li>Japanese</li>
+                            <li>Korean</li>
+                            <li>Oshiwambo (<i>Bantu</i>)</li>
+                        </ul>
+                        </div>
                     <!-- <p>I'm also interested in Langauge Revitilization and research on Indigenous North American Languages. I am currently involved in the <a href="https://linguistics.fas.harvard.edu/wolf-lab">WOLF lab</a> at Harvard University where I am a research assistant</p> -->
                     </div>
-            </section>
-            <section id="publications-button">
-                <div class="blob">
-                    <h2>Outputs</h2>
-                    <section id="publications">
-                        <h3>2026</h3>
-                        <ul>
-                            <li class="large-text-grey"><a href="static/TA-2026-interpreting-clausal-movement.pdf">[link]</a> Tatiana Bondarenko, Jacob Fernandes, Kaden Holladay, and Richard Luo. 2026. Interpreting Clausal Movement. In <i>A Festschrift for Danny Fox</i></li>
-                            <button onclick="document.getElementById('interpreting-clausal-movement').classList.toggle('visible')">Cite me</button>
-                            <div class="padded bg-black rounded" id="interpreting-clausal-movement" class="visible">
-<pre>
-                                <code data-lang="bibtex">
-@incollection{bondarenko-et-al-2026,
-    title = {Interpreting {C}lausal {M}ovement},
-    author = {Bondarenko, Tatiana and Fernandes, Jacob and Holladay, Kaden and Luo, Richard},
-    booktitle = {Festschrift},
-    year = {2026},
-    }
-                                </code></pre>
-                            </div>
-                        </ul>
-                        <h3>Manuscripts</h3>
-                        <ul>
-                            <li class="large-text-grey"><a href="static/SeniorThesis-23.pdf">[link]</a> Fernandes, Jacob. 2024. Applications of Machine Learning for Predicting Sound Symbolism in Japanese and Korean Ideophones. Cambridge: Harvard Unviersity. <a href="https://osf.io/py43z/?view_only=b6d0eee440184c91bfb53b8ec8dcda94">[Dataset]</a></li>
-                            <li class="large-text-grey"><a href="https://drive.google.com/file/d/1zxzVBb5DEw6blUqCRg72TQoDuIqjln3b/view?usp=sharing">[link]</a> Fernandes, Jacob. 2024. Size matters in Georgian, too.</li>
-                            <li class="large-text-grey"><a href="https://drive.google.com/file/d/1-Cg7MlQOt5YJshSOnhqa9PM14VXUhw5k/view?usp=sharing">[link]</a> Fernandes, Jacob & Silva, Ava. 2024. Alabama Type I agent morpheme agreement: A Stratal OT account.</li>
-                        </ul>
-                        <h3>Presentations</h3>
-                        <ul>
-                            <li class="large-text-grey"><a href="static/SSILA-FINAL.pdf">[slides]</a> (with Ava Silva) The allomorphs are not what they seem: a Stratal OT account of Alabama Agent Agreement. Talk presented at the Annual Meeting of the Society for the Study of Indigenous Languages of the Americas (SSILA), 2026.</li>
-                            <li class="large-text-grey"><a href="static/toobigtofail.pdf">[Poster]</a>“Too big to fail: Selective Opacity Effects in Three Types of Georgian Relative Clauses.” Poster presented at the <i>Annual Meeting of the South Caucasian Chalk Circle (SCCC), 2025</i></li>
-                            <li class="large-text-grey"><a href="https://drive.google.com/file/d/1mBIqDx0S6N4WO301wa1Gw7yN3OVPao7j/view?usp=sharing">[slides]</a> (With Tanya Bondarenko) Sentence mood in the tense system of the
-                                Alabama language <i>Annual Meeting of the Society for the Study of Indigenous Languages of the Americas (SSILA), 2025</i></li>
-                        </ul>
-                    </section>
-                </div>
             </section>
         </div>
     </main>
